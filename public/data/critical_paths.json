@@ -1,0 +1,3620 @@
+[
+  {
+    "path_id": "path_0001",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00047"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0002",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00048"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0003",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Astera Labs",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00057"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0004",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00078"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0005",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00083"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0006",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Calnex Solutions",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00084"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0007",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00090"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0008",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00257"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0009",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00258"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0010",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00265"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0011",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00274"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0012",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00275"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0013",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00278"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0014",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00294"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0015",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00297"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0016",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00366"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0017",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00368"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0018",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Equinix, Inc.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00387"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0019",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00413"
+    ],
+    "confidence": "high",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0020",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Nokia",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00438"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0021",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Nokia",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00444"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0022",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "ABB",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00480"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0023",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "ABB",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00481"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0024",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "BioNano Genomics",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00490"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0025",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "BioNano Genomics",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00491"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0026",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0027",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Hon Hai",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00508"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0028",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Schneider Electric",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00539"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0029",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Schneider Electric",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00540"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0030",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Alchip Technologies",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00544"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0031",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Alchip Technologies",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00545"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0032",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "LM Ericsson B",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00592"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0033",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Eaton",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00626"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0034",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Eaton",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00627"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0035",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Calnex Solutions",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00663"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0036",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00717"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0037",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SKYX Platforms",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00743"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0038",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "SKYX Platforms",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00744"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0039",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Illumina",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00847"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0040",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Tencent Holdings Ltd.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00858"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0041",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Fabrinet",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00882"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0042",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Fabrinet",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00883"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0043",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Larsen & Toubro",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00884"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0044",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Inventec",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00889"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0045",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Lanner Electronics",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00894"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0046",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Quantum-Si A",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01055"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0047",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Quantum-Si A",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01056"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0048",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "NetApp",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01072"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0049",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "NetApp",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01073"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0050",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "X-FAB Silicon Foundries",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01170"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0051",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "X-FAB Silicon Foundries",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01171"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0052",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "CoreWeave",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01189"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0053",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Rockwell Automation",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01192"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0054",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Rockwell Automation",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01193"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0055",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Cisco",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01257"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0056",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Cisco",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01258"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0057",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "HPE",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01312"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0058",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Amkor",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01366"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0059",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Lanner Electronics",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01415"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0060",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Larsen & Toubro",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01417"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0061",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "LM Ericsson B",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01425"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0062",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Mellanox Technologies Ltd.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01475"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0063",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Illumina",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01484"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0064",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01490"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0065",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "Inventec",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01500"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0066",
+    "path_type": "direct_to_nvidia",
+    "node_names": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_02324"
+    ],
+    "confidence": "medium",
+    "caveat": "Relationship path from source data; not a shipment route."
+  },
+  {
+    "path_id": "path_0067",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00043",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0068",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Xintec",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00045",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0069",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Astera Labs",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00062",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0070",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Gudeng Equipment",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00072",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0071",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASE Technology Holding",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00085",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0072",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Himax Technologies ADR",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00087",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0073",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00089",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0074",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00091",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0075",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Astera Labs",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00093",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0076",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "NuFlare Technology, Inc.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00107",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0077",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "AMD",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00240",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0078",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Shin-Etsu Chemical",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00259",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0079",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "JSR Corporation",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00260",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0080",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Applied Materials",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00262",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0081",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "CTCI",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00263",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0082",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Snowflake",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00267",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0083",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Daewon CTS Co., Ltd.",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00273",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0084",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Shin-Etsu Chemical",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00306",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0085",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Dolby Laboratories, Inc.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00319",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0086",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Netlist",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00327",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0087",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ajinomoto Co., Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00344",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0088",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ajinomoto Co., Inc.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00346",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0089",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ajinomoto Co., Inc.",
+      "Amkor",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00347",
+      "edge_01366"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0090",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00367",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0091",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FADU",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00389",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0092",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FormFactor",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00401",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0093",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FormFactor",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00402",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0094",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Applied Materials",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00410",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0095",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Genesem",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00411",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0096",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00414",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0097",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GSI Technology",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00422",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0098",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Versum Materials",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00425",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0099",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Versum Materials",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00426",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0100",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Versum Materials",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00427",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0101",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Nokia",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00440",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0102",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Danoffice IT ApS",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00452",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0103",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SemiFive",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00461",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0104",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Broadcom Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00472",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0105",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Tokyo Ohka Kogyo",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00474",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0106",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ansys",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00476",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0107",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Qualcomm Inc",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00484",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0108",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Qualcomm Inc",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00485",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0109",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Inphi Corp.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00506",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0110",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hansol Technics",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00507",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0111",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Alchip Technologies",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00546",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0112",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Immersion",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00569",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0113",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Impinj",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00591",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0114",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "CammSys",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00597",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0115",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "STMicroelectronics",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00605",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0116",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Mellanox Technologies Ltd.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00609",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0117",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rambus",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00613",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0118",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rambus",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00614",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0119",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rambus",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00617",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0120",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FemtoMetrix, Inc.",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00628",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0121",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Inzi Display",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00640",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0122",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Siemens EDA",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00646",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0123",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Mirgor C",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00670",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0124",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GlobalFoundries",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00676",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0125",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ironSource Ltd.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00687",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0126",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "NXP",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00704",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0127",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Cray, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00710",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0128",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Global Unichip",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00725",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0129",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Chips & Media",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00732",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0130",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Cadence",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00751",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0131",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Cadence",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00753",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0132",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Soulbrain",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00764",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0133",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Soulbrain",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00765",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0134",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ambiq Micro",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00776",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0135",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GCT Semiconductor Holding A",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00777",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0136",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GCT Semiconductor Holding A",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00778",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0137",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Synopsys",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00780",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0138",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Synopsys",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00781",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0139",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lens Technology H",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00794",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0140",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hana Micron",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00814",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0141",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hana Micron",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00828",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0142",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "DTS, Inc. (California)",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00833",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0143",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "indie Semiconductor A",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00844",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0144",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Raya Holding Financial",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00870",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0145",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "NuFlare Technology, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00871",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0146",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Sumitomo Chemical",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00874",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0147",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "LOT Vacuum",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00876",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0148",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "YoungWoo DSP",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00877",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0149",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "AMD",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00880",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0150",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Moschip Technologies",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00898",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0151",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Stratio, Inc.",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00907",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0152",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "OMNIVISION Technologies, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00915",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0153",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SiFive, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00941",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0154",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hailo Technologies Ltd.",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00958",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0155",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Corning",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00959",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0156",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Credo Technology Group",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00971",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0157",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lam Research",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00980",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0158",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Genesem",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00981",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0159",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GAONCHIPS",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00985",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0160",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hassan Allam Holding",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00988",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0161",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Sondrel (Holdings) Plc",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00996",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0162",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Sondrel (Holdings) Plc",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_00997",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0163",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Universal Display",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01029",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0164",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "DSP Group, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01043",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0165",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "TES",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01049",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0166",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "TES",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01050",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0167",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Gudeng Precision Rg",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01089",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0168",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Penguin Solutions",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01097",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0169",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Penguin Solutions",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01100",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0170",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Daewon CTS Co., Ltd.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01104",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0171",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hansol Chemical",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01118",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0172",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Wuxi Unicomp Technology",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01131",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0173",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Xcerra Corp.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01158",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0174",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rudolph Technologies, Inc.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01166",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0175",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rudolph Technologies, Inc.",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01167",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0176",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rudolph Technologies, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01168",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0177",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Duk San Neolux",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01175",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0178",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Himax Technologies ADR",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01182",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0179",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SiTime",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01185",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0180",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01194",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0181",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01196",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0182",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01197",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0183",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01198",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0184",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Skyworks Solutions",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01210",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0185",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FSI INTL INC",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01219",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0186",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Faraday Technology",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01238",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0187",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Entegris",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01239",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0188",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FormFactor",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01251",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0189",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Inspire Semiconductor Holdings",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01274",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0190",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Hodogaya Chemical",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01282",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0191",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Arteris",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01290",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0192",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silvaco",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01294",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0193",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Idaho Power Co.",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01325",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0194",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Inphi Corp.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01343",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0195",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Alphawave IP",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01347",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0196",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "DNF Co",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01348",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0197",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ajinomoto Co., Inc.",
+      "Unimicron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01368",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0198",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Progate Group",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01377",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0199",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Mobileye Global A",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01380",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0200",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Shenzhen Goodix Tech A",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01399",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0201",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SK ecoplant",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01403",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0202",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Techpoint JDR",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01409",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0203",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Sanhua Holding Group Co., Ltd.",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01418",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0204",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Borqs Technologies",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01436",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0205",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Cirrus Logic",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01447",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0206",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "DNF Co",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01456",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0207",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "MediaTek",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01468",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0208",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "MediaTek",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01507",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0209",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Sequans Communications ADR",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01512",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0210",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASE Technology Holding",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01515",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0211",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FormFactor",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01589",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0212",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FormFactor",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01591",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0213",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "MOSYS INC",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01594",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0214",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "KLA",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01595",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0215",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Entegris",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01599",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0216",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Entegris",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01601",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0217",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "CMC Materials LLC",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01609",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0218",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Onto Innovation",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01612",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0219",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "THERMA WAVE INC",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01630",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0220",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Amkor",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01635",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0221",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rambus",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01646",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0222",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ATMI INC",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01652",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0223",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "INTEGRATED MEASURMNT SYS INC",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01659",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0224",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ASYST TECHNOLOGIES INC",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01672",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0225",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "ANADIGICS INC",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01675",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0226",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Ultratech, Inc.",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01692",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0227",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "FUSION SYSTEMS CORP",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01695",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0228",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Versum Materials",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01707",
+      "edge_00048"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0229",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Qualcomm Inc",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01723",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0230",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SOLUNA HOLDINGS INC",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01729",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0231",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Qualcomm Inc",
+      "SAMSUNG ELECTRONICS CO  -ADR",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01738",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0232",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Teradyne",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01743",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0233",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Teradyne",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01744",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0234",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Inphi Corp.",
+      "Samsung C&T Corp.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01749",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0235",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Rambus",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01759",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0236",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "KULICKE & SOFFA INDUSTRIES",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01777",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0237",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "INTERDIGITAL INC",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01791",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0238",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Teradyne",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01804",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0239",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Photronics",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01807",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0240",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "INTEGRATED DEVICE TECH INC",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01810",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0241",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "PLEXUS CORP",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01822",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0242",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "SPEEDFAM-IPEC INC",
+      "Samsung C&T Corp.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01830",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0243",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lam Research",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01840",
+      "edge_00048"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0244",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lam Research",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01841",
+      "edge_00278"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0245",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lam Research",
+      "Micron",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01843",
+      "edge_00494"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0246",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Lam Research",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01844",
+      "edge_00047"
+    ],
+    "confidence": "medium",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0247",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "GRANITE REAL ESTATE INVEST",
+      "Samsung C&T Corp.",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01845",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0248",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01847",
+      "edge_00047"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0249",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "MICRON CORP/TX",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01848",
+      "edge_00494"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  },
+  {
+    "path_id": "path_0250",
+    "path_type": "tier2_candidate_to_nvidia",
+    "node_names": [
+      "Silicon Motion Technology",
+      "Samsung",
+      "NVIDIA"
+    ],
+    "edge_ids": [
+      "edge_01849",
+      "edge_00278"
+    ],
+    "confidence": "low",
+    "caveat": "Candidate tier-2 relationship; not a verified NVIDIA-specific path."
+  }
+]

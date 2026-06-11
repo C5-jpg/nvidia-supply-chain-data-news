@@ -1,0 +1,142 @@
+[
+  {
+    "category": "other",
+    "supply_stage": "weak_other",
+    "edge_count": 2084,
+    "criticality_sum": 1384,
+    "criticality_count": 435,
+    "avg_criticality": 3.18,
+    "sole_source_edges": 1,
+    "nvidia_related_edges": 104
+  },
+  {
+    "category": "gpu_accelerator",
+    "supply_stage": "downstream_demand",
+    "edge_count": 214,
+    "criticality_sum": 472,
+    "criticality_count": 114,
+    "avg_criticality": 4.14,
+    "sole_source_edges": 10,
+    "nvidia_related_edges": 42
+  },
+  {
+    "category": "semiconductor_equipment",
+    "supply_stage": "semiconductor_equipment",
+    "edge_count": 199,
+    "criticality_sum": 310,
+    "criticality_count": 76,
+    "avg_criticality": 4.08,
+    "sole_source_edges": 5,
+    "nvidia_related_edges": 10
+  },
+  {
+    "category": "networking",
+    "supply_stage": "networking_interconnect",
+    "edge_count": 166,
+    "criticality_sum": 238,
+    "criticality_count": 69,
+    "avg_criticality": 3.45,
+    "sole_source_edges": 8,
+    "nvidia_related_edges": 17
+  },
+  {
+    "category": "software_ip",
+    "supply_stage": "design_ip",
+    "edge_count": 164,
+    "criticality_sum": 373,
+    "criticality_count": 136,
+    "avg_criticality": 2.74,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 21
+  },
+  {
+    "category": "foundry_services",
+    "supply_stage": "foundry",
+    "edge_count": 111,
+    "criticality_sum": 374,
+    "criticality_count": 62,
+    "avg_criticality": 6.03,
+    "sole_source_edges": 19,
+    "nvidia_related_edges": 9
+  },
+  {
+    "category": "memory",
+    "supply_stage": "hbm_memory",
+    "edge_count": 74,
+    "criticality_sum": 203,
+    "criticality_count": 45,
+    "avg_criticality": 4.51,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 11
+  },
+  {
+    "category": "power_delivery",
+    "supply_stage": "power_cooling",
+    "edge_count": 47,
+    "criticality_sum": 120,
+    "criticality_count": 42,
+    "avg_criticality": 2.86,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 8
+  },
+  {
+    "category": "raw_materials",
+    "supply_stage": "raw_materials",
+    "edge_count": 41,
+    "criticality_sum": 143,
+    "criticality_count": 40,
+    "avg_criticality": 3.58,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 0
+  },
+  {
+    "category": "advanced_packaging",
+    "supply_stage": "advanced_packaging",
+    "edge_count": 36,
+    "criticality_sum": 131,
+    "criticality_count": 32,
+    "avg_criticality": 4.09,
+    "sole_source_edges": 4,
+    "nvidia_related_edges": 8
+  },
+  {
+    "category": "substrates",
+    "supply_stage": "substrate",
+    "edge_count": 21,
+    "criticality_sum": 112,
+    "criticality_count": 20,
+    "avg_criticality": 5.6,
+    "sole_source_edges": 7,
+    "nvidia_related_edges": 0
+  },
+  {
+    "category": "construction",
+    "supply_stage": "power_cooling",
+    "edge_count": 14,
+    "criticality_sum": 26,
+    "criticality_count": 10,
+    "avg_criticality": 2.6,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 2
+  },
+  {
+    "category": "cooling",
+    "supply_stage": "power_cooling",
+    "edge_count": 5,
+    "criticality_sum": 15,
+    "criticality_count": 5,
+    "avg_criticality": 3,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 0
+  },
+  {
+    "category": "osat_services",
+    "supply_stage": "system_assembly",
+    "edge_count": 5,
+    "criticality_sum": 37,
+    "criticality_count": 5,
+    "avg_criticality": 7.4,
+    "sole_source_edges": 0,
+    "nvidia_related_edges": 1
+  }
+]

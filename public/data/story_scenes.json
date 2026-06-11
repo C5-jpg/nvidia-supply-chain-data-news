@@ -1,0 +1,212 @@
+[
+  {
+    "scene_id": "intro_global_network",
+    "headline": "A US-designed accelerator depends on a ring of specialized countries.",
+    "body": "A US-designed accelerator depends on a ring of specialized countries.",
+    "activeCountries": [
+      "US",
+      "TW",
+      "KR",
+      "JP",
+      "NL",
+      "CN",
+      "HK"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "global_map",
+    "annotation": "",
+    "metricFocus": "edge_count + criticality_sum",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "us_design",
+    "headline": "The journey starts with NVIDIA as a US design and platform company.",
+    "body": "The journey starts with NVIDIA as a US design and platform company.",
+    "activeCountries": [
+      "US"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "node_focus",
+    "annotation": "",
+    "metricFocus": "direction",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "taiwan_foundry",
+    "headline": "Taiwan is the foundry and advanced-packaging anchor.",
+    "body": "Taiwan is the foundry and advanced-packaging anchor.",
+    "activeCountries": [
+      "TW",
+      "US"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "arc_focus",
+    "annotation": "",
+    "metricFocus": "criticality + sole_source",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "korea_hbm",
+    "headline": "HBM concentrates the memory layer in Korea and selected US memory vendors.",
+    "body": "HBM concentrates the memory layer in Korea and selected US memory vendors.",
+    "activeCountries": [
+      "KR",
+      "US"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "stage_filter",
+    "annotation": "",
+    "metricFocus": "memory edges",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "hidden_upstream",
+    "headline": "The visible GPU path relies on equipment and materials upstream.",
+    "body": "The visible GPU path relies on equipment and materials upstream.",
+    "activeCountries": [
+      "NL",
+      "JP",
+      "US",
+      "TW",
+      "KR"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "tier2_network",
+    "annotation": "",
+    "metricFocus": "tier2_count",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "advanced_packaging",
+    "headline": "Advanced packaging turns dies and memory into an AI accelerator.",
+    "body": "Advanced packaging turns dies and memory into an AI accelerator.",
+    "activeCountries": [
+      "TW",
+      "US",
+      "JP",
+      "KR"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "risk_stage",
+    "annotation": "",
+    "metricFocus": "criticality",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "system_assembly",
+    "headline": "Systems move from chips into servers, boards and racks.",
+    "body": "Systems move from chips into servers, boards and racks.",
+    "activeCountries": [
+      "TW",
+      "US",
+      "HK",
+      "CN"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "node_group",
+    "annotation": "",
+    "metricFocus": "edge_count",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "downstream_demand",
+    "headline": "NVIDIA GPUs flow into cloud, AI labs and compute buyers.",
+    "body": "NVIDIA GPUs flow into cloud, AI labs and compute buyers.",
+    "activeCountries": [
+      "US",
+      "AE",
+      "SA",
+      "FR",
+      "IN"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "downstream_arcs",
+    "annotation": "",
+    "metricFocus": "downstream_count",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "facilities_power_map",
+    "headline": "Demand appears as power-hungry AI infrastructure.",
+    "body": "Demand appears as power-hungry AI infrastructure.",
+    "activeCountries": [
+      "US",
+      "AE",
+      "FR",
+      "SA",
+      "IN"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "bubble_map",
+    "annotation": "",
+    "metricFocus": "power_mw + gpu_count",
+    "dataFilter": ""
+  },
+  {
+    "scene_id": "risk_concentration",
+    "headline": "The tightest links are few, high-criticality and sometimes single-source.",
+    "body": "The tightest links are few, high-criticality and sometimes single-source.",
+    "activeCountries": [
+      "US",
+      "TW",
+      "KR",
+      "JP",
+      "NL"
+    ],
+    "activeNodes": [],
+    "activeCategories": [],
+    "activeEdges": [],
+    "mapCamera": {
+      "mode": "world"
+    },
+    "visualMode": "risk_view",
+    "annotation": "",
+    "metricFocus": "criticality + sole_source",
+    "dataFilter": ""
+  }
+]

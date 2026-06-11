@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3f1ea;
+  --surface: #ebe8df;
+  --hairline: #c9c3b6;
+  --text-primary: #171717;
+  --text-secondary: #4f4a42;
+  --text-muted: #7b756a;
+  --land: #d8d3c8;
+  --border: #b7b0a4;
+  --accent-primary: #2f6f73;
+  --accent-secondary: #b47a2b;
+  --risk: #b8423a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: Inter, Arial, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(47, 111, 115, 0.18);
+}
+
+a {
+  color: inherit;
+}
+
+.hairline {
+  border-color: var(--hairline);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-shell {
+  position: relative;
+  min-height: 92vh;
+  padding: 64px clamp(24px, 5vw, 78px) 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-rule {
+  position: absolute;
+  top: 28px;
+  left: clamp(24px, 5vw, 78px);
+  right: clamp(24px, 5vw, 78px);
+  height: 1px;
+  background: var(--hairline);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: clamp(28px, 5vw, 86px);
+  align-items: center;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  max-width: 820px;
+  font-family: Georgia, Charter, "Source Serif Pro", serif;
+  font-size: clamp(42px, 5.5vw, 72px);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.hero-meta,
+.byline,
+.step-kicker,
+.map-label,
+.source-note,
+.world-map-shell figcaption {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  color: var(--text-muted);
+}
+
+.hero-dek {
+  max-width: 760px;
+  margin: 28px 0 18px;
+  color: var(--text-secondary);
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.58;
+}
+
+.hero-visual {
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 34px 0;
+}
+
+.hero-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-land {
+  fill: var(--land);
+  opacity: 0.58;
+}
+
+.hero-arc,
+.map-arc {
+  fill: none;
+  stroke: var(--accent-primary);
+  stroke-linecap: round;
+}
+
+.hero-arc {
+  stroke-width: 1.2;
+  opacity: 0.55;
+}
+
+.hero-arc-secondary {
+  stroke: var(--accent-secondary);
+  opacity: 0.48;
+}
+
+.hero-arc-risk {
+  stroke: var(--risk);
+  opacity: 0.45;
+}
+
+.hero-dot {
+  fill: var(--accent-primary);
+  stroke: var(--text-primary);
+  stroke-width: 0.8;
+  opacity: 0.72;
+}
+
+.hero-dot-accent {
+  fill: var(--accent-secondary);
+}
+
+.hero-dot-risk {
+  fill: var(--risk);
+}
+
+.hero-kpis {
+  margin: clamp(34px, 5vw, 68px) 0 16px;
+  padding: 24px 0 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.hero-kpis div {
+  min-width: 0;
+}
+
+.hero-kpis dt {
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.hero-kpis dd {
+  margin: 0;
+  font-family: Georgia, Charter, "Source Serif Pro", serif;
+  font-size: clamp(30px, 3.8vw, 48px);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.source-note {
+  max-width: 860px;
+  margin: 14px 0 0;
+}
+
+.scrolly-section {
+  display: grid;
+  grid-template-columns: minmax(320px, 39%) minmax(0, 61%);
+  gap: clamp(28px, 4vw, 72px);
+  padding: 0 clamp(24px, 5vw, 78px) 96px;
+  border-top: 1px solid var(--hairline);
+}
+
+.scrolly-copy {
+  padding-top: 16vh;
+}
+
+.story-step {
+  min-height: 76vh;
+  padding: 34px 0 40px;
+  opacity: 0.42;
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+
+.story-step-active {
+  opacity: 1;
+}
+
+.story-step h3 {
+  margin: 12px 0 16px;
+  font-family: Georgia, Charter, "Source Serif Pro", serif;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.story-step > p:not(.step-kicker):not(.source-note) {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.sticky-visual-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.world-map-shell {
+  width: 100%;
+  margin: 0;
+}
+
+.map-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.map-title-row h2 {
+  margin: 2px 0 0;
+  font-family: Georgia, Charter, "Source Serif Pro", serif;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.map-count {
+  color: var(--text-muted);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 13px;
+}
+
+.map-canvas {
+  position: relative;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 10px;
+}
+
+.map-canvas svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-country {
+  fill: var(--land);
+  stroke: var(--border);
+  stroke-width: 0.55;
+  opacity: 0.74;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-arc {
+  opacity: 0.42;
+  transition: opacity 260ms ease, stroke-width 260ms ease;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-arc-risk {
+  stroke: var(--risk);
+  opacity: 0.54;
+}
+
+.map-point circle {
+  fill: var(--accent-primary);
+  stroke: var(--text-primary);
+  stroke-width: 0.8;
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-point text {
+  fill: var(--text-secondary);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  pointer-events: none;
+}
+
+.map-point-muted circle {
+  opacity: 0.14;
+}
+
+.map-point-active circle {
+  opacity: 0.72;
+}
+
+.map-point-risk circle {
+  fill: var(--risk);
+}
+
+.map-annotation {
+  position: absolute;
+  left: 18px;
+  bottom: 26px;
+  max-width: 300px;
+  padding: 10px 12px;
+  background: rgba(243, 241, 234, 0.9);
+  border: 1px solid var(--hairline);
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.world-map-shell figcaption {
+  margin-top: 10px;
+}
+
+.methodology-stub {
+  padding: 72px clamp(24px, 5vw, 78px) 96px;
+  border-top: 1px solid var(--hairline);
+}
+
+.methodology-inner {
+  max-width: 920px;
+}
+
+.methodology-stub h2 {
+  margin: 0 0 22px;
+  font-family: Georgia, Charter, "Source Serif Pro", serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+}
+
+.methodology-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.methodology-list p {
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--hairline);
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .hero-shell {
+    min-height: auto;
+  }
+
+  .hero-grid,
+  .scrolly-section,
+  .hero-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-visual-stage {
+    position: relative;
+    height: auto;
+    padding: 22px 0 48px;
+  }
+
+  .scrolly-copy {
+    padding-top: 48px;
+  }
+
+  .story-step {
+    min-height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

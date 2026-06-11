@@ -1,0 +1,181 @@
+[
+  {
+    "path_id": "editorial_path_01_asml_tsmc_nvidia",
+    "title": "ASML to TSMC to NVIDIA",
+    "subtitle": "A candidate hidden-upstream equipment path into Taiwan foundry capacity, followed by direct TSMC-to-NVIDIA records.",
+    "nodes": [
+      "ASML",
+      "TSMC",
+      "NVIDIA"
+    ],
+    "countries": [
+      "NL",
+      "TW",
+      "US"
+    ],
+    "edges": [
+      "edge_00043",
+      "edge_00089",
+      "edge_00048",
+      "edge_00090",
+      "edge_00258"
+    ],
+    "supply_stage": [
+      "semiconductor_equipment",
+      "foundry",
+      "advanced_packaging"
+    ],
+    "relationship_type": "candidate_tier2_to_direct_upstream",
+    "editorial_priority": 1,
+    "risk_summary": "High criticality and sole-source flags appear on the equipment and TSMC links in the source data.",
+    "caveat": "ASML -> TSMC is candidate tier-2; it is not a NVIDIA direct supplier relationship.",
+    "source_note": "Sources: Scrutica chip-deployment chain. Criticality is a risk score; share_pct is sparse."
+  },
+  {
+    "path_id": "editorial_path_02_tsmc_nvidia",
+    "title": "TSMC to NVIDIA",
+    "subtitle": "Direct foundry and advanced-packaging records make Taiwan the clearest anchor in the NVIDIA upstream data.",
+    "nodes": [
+      "TSMC",
+      "NVIDIA"
+    ],
+    "countries": [
+      "TW",
+      "US"
+    ],
+    "edges": [
+      "edge_00048",
+      "edge_00090",
+      "edge_00258"
+    ],
+    "supply_stage": [
+      "foundry",
+      "advanced_packaging"
+    ],
+    "relationship_type": "direct_upstream",
+    "editorial_priority": 2,
+    "risk_summary": "The selected records carry high criticality and sole-source flags.",
+    "caveat": "This is a supplier-customer relationship record, not internal procurement or capacity allocation data.",
+    "source_note": "Sources: Scrutica chip-deployment chain. Criticality is a risk score; share_pct is sparse."
+  },
+  {
+    "path_id": "editorial_path_03_hbm_nvidia",
+    "title": "HBM memory suppliers to NVIDIA",
+    "subtitle": "SK Hynix, Samsung and Micron records frame HBM as a distinct memory layer in the supply chain.",
+    "nodes": [
+      "SK Hynix",
+      "NVIDIA"
+    ],
+    "countries": [
+      "KR",
+      "US"
+    ],
+    "edges": [
+      "edge_00047",
+      "edge_00078",
+      "edge_00257",
+      "edge_00275",
+      "edge_00294"
+    ],
+    "supply_stage": [
+      "hbm_memory"
+    ],
+    "relationship_type": "direct_upstream",
+    "editorial_priority": 3,
+    "risk_summary": "The selected HBM records are high or medium criticality, but the score is not a spending measure.",
+    "caveat": "Memory rows show supplier-customer relationships; they do not provide shipment volume.",
+    "source_note": "Sources: Scrutica chip-deployment chain. Criticality is a risk score; share_pct is sparse."
+  },
+  {
+    "path_id": "editorial_path_04_substrates_packaging",
+    "title": "Ajinomoto and substrates into advanced packaging",
+    "subtitle": "Substrate records connect Japan-origin material constraints to the packaging layer around AI accelerators.",
+    "nodes": [
+      "Ajinomoto Co., Inc.",
+      "TSMC",
+      "Samsung",
+      "Amkor",
+      "NVIDIA"
+    ],
+    "countries": [
+      "JP",
+      "TW",
+      "US"
+    ],
+    "edges": [
+      "edge_00100",
+      "edge_00101",
+      "edge_00344",
+      "edge_00345",
+      "edge_00048"
+    ],
+    "supply_stage": [
+      "substrate",
+      "advanced_packaging"
+    ],
+    "relationship_type": "candidate_tier2_to_packaging_chain",
+    "editorial_priority": 4,
+    "risk_summary": "Substrate records include high criticality and sole-source flags.",
+    "caveat": "Substrate links are candidate tier-2 context; they are not NVIDIA direct supplier records.",
+    "source_note": "Sources: Other derived source; Scrutica enrichment; Scrutica chip-deployment chain. Criticality is a risk score; share_pct is sparse."
+  },
+  {
+    "path_id": "editorial_path_05_nvidia_downstream_demand",
+    "title": "NVIDIA to downstream cloud and AI infrastructure demand",
+    "subtitle": "Rows where NVIDIA is the supplier belong to the demand side, not the upstream map.",
+    "nodes": [
+      "NVIDIA",
+      "Oracle Corporation",
+      "Meta Platforms, Inc.",
+      "Amazon.com, Inc.",
+      "NVIDIA Corporation / CoreWeave",
+      "CoreWeave",
+      "xAI"
+    ],
+    "countries": [
+      "US"
+    ],
+    "edges": [
+      "edge_00046",
+      "edge_00081",
+      "edge_00293",
+      "edge_00296",
+      "edge_00304",
+      "edge_00409"
+    ],
+    "supply_stage": [
+      "downstream_demand",
+      "networking_interconnect"
+    ],
+    "relationship_type": "downstream_demand",
+    "editorial_priority": 5,
+    "risk_summary": "Several downstream records are high criticality or sole-source in the source data.",
+    "caveat": "Downstream demand is not a NVIDIA supplier relationship.",
+    "source_note": "Sources: Scrutica chip-deployment chain. Criticality is a risk score; share_pct is sparse."
+  },
+  {
+    "path_id": "editorial_path_06_facilities_demand_layer",
+    "title": "AI infrastructure facilities as demand pressure",
+    "subtitle": "Facility records describe power-hungry AI infrastructure that helps explain demand for accelerators.",
+    "nodes": [
+      "AI training facilities",
+      "Hyperscale data centers"
+    ],
+    "countries": [
+      "AE",
+      "US",
+      "SA",
+      "FR",
+      "IN"
+    ],
+    "edges": [],
+    "supply_stage": [
+      "facility_demand"
+    ],
+    "relationship_type": "facilities_demand_layer",
+    "editorial_priority": 6,
+    "risk_summary": "Facilities concentrate large power requirements, but are not supplier records.",
+    "caveat": "Facilities are not a complete NVIDIA customer list.",
+    "source_note": "Sources: facilities provenance data. Facility coordinates are represented at country level unless later geocoded."
+  }
+]
