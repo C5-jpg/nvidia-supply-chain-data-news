@@ -1,28 +1,33 @@
 # GitHub Publication Report
 
-This report documents the publication of the NVIDIA AI supply chain data journalism project repository on GitHub.
+**Updated:** 2026-06-12 (session 2)
 
 ---
 
-## 1. Git Repository Initialization
+## 1. Git Status
 
-* **Local initialization**: Run `git init` on the project root folder.
-* **Ignored Files**: Configured `.gitignore` to skip `node_modules/`, `.next/`, `.vercel/`, and local log files while retaining data assets (`public/data`) required by the build system.
-* **Commit details**:
-  * **Commit Hash**: `709b41f`
-  * **Commit Message**: `feat: build NVIDIA supply-chain data journalism site`
+* **Branch:** `master` (tracking `origin/master`)
+* **Latest commit:** `ab44fe1` — `fix: convert all modules to paper editorial theme, remove dark-theme remnants`
+* **Previous commit:** `c5013b4` — `docs: complete QA reports, deployment docs, and completion report`
 
----
+## 2. Session 2 Changes (commit ab44fe1)
 
-## 2. GitHub Push
+* Converted CountryAnalysis, CriticalPaths, FacilitiesMap, StockTimeline, Methodology from dark theme to paper editorial theme
+* Extended globals.css with 200+ lines of editorial section styles
+* Removed unused MethodologyStub.tsx and duplicate src/styles/globals.css
+* Updated audit report
 
-* **Tool**: GitHub CLI (`gh`).
-* **Logged-in user**: `C5-jpg`.
-* **Repository Name**: `nvidia-supply-chain-data-news`
-* **Repository Visibility**: Public.
-* **Repository URL**: [C5-jpg/nvidia-supply-chain-data-news](https://github.com/C5-jpg/nvidia-supply-chain-data-news)
-* **Command run**:
-  ```powershell
-  gh repo create nvidia-supply-chain-data-news --public --source=. --remote=origin --push
-  ```
-* **Status**: Succeeded. Remote branch `master` is set up to track `origin/master`.
+## 3. GitHub Repository
+
+* **Repository URL:** [C5-jpg/nvidia-supply-chain-data-news](https://github.com/C5-jpg/nvidia-supply-chain-data-news)
+* **Visibility:** Public
+* **User:** C5-jpg (keyring auth)
+* **Push status:** ✅ Succeeded (`c5013b4..ab44fe1 master -> master`)
+
+## 4. Commit Log
+
+```
+ab44fe1 fix: convert all modules to paper editorial theme, remove dark-theme remnants
+c5013b4 docs: complete QA reports, deployment docs, and completion report
+709b41f feat: build NVIDIA supply-chain data journalism site
+```

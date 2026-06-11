@@ -1,90 +1,102 @@
-# NVIDIA Supply Chain Data Journalism Project Completion Report
+# 23 · Overnight Completion Report
 
-This handoff report documents the complete implementation of the NVIDIA AI supply chain data journalism project, outlining the engineering steps, cartographic standards, and deployment pipelines.
-
----
-
-## 1. Project URLs
-
-* **GitHub Repository**: [C5-jpg/nvidia-supply-chain-data-news](https://github.com/C5-jpg/nvidia-supply-chain-data-news)
-* **Vercel Production Deployment**: [nvidia-supply-chain-data-news.vercel.app](https://nvidia-supply-chain-data-news.vercel.app)
+**Date:** 2026-06-12 (session 2)
+**Commit:** `ab44fe1` — fix: convert all modules to paper editorial theme, remove dark-theme remnants
 
 ---
 
-## 2. Completed Modules
+## A. Fully Completed ✅
 
-All target modules have been fully implemented and verified locally and in the production build:
-1. **Hero & Editorial Intro**: Established the large title, bylines, dates, source notes, and raw KPI numbers (no cards, no SaaS widgets).
-2. **10-Scene Scrollytelling Narrative**: Expanded the story from 3 scenes to 10 scenes, linking scroll interactions to D3 WorldMap filters and rendering.
-3. **Country Analysis**: Developed ranking metrics and detail annotations showing regional summaries (supplier counts, criticality ratings, data center power).
-4. **Critical Paths**: Plotted 6 curated editorial paths (e.g. Dutch equipment to TSMC to Nvidia) showing downstream vs upstream flows.
-5. **Facilities Map**: Rendered global AI data centers and training nodes on the projected D3 base map, scaled by megawatts (MW).
-6. **Stock Timeline**: Parsed the historic stock CSV and drew a D3 log-scale chart tracking Nvidia's financial growth (revenue, EPS, surprise) since 1999.
-7. **Editorial Methodology**: Created a thorough section addressing data sources, terminology clarifications, border conventions, and cartographic rules.
+1. **Repository Audit** — Full codebase read, all files inventoried, critical theme inconsistency identified
+2. **Theme Conversion** — All 5 dark-theme modules (CountryAnalysis, CriticalPaths, FacilitiesMap, StockTimeline, Methodology) converted to warm paper editorial theme using CSS custom properties
+3. **CSS Extension** — globals.css extended with 200+ lines of editorial section styles (metric toggles, country rankings, path diagrams, facility tooltips, stock chart, methodology)
+4. **Cleanup** — Removed unused MethodologyStub.tsx, duplicate src/styles/globals.css, raw CSV from public/
+5. **Testing** — All 3 commands pass: prepare-data (12 checks), style-guard (8 forbidden tokens), build (static)
+6. **Data Semantics** — All labels correct: criticality=not monetary, share_pct≠market share, upstream/downstream correct, TW/CN/HK separate
+7. **GitHub Push** — Pushed to origin/master: `c5013b4..ab44fe1`
+8. **Vercel Deploy** — Live at production URL, build succeeded in 12s
 
----
+## B. Completed Locally, No Manual Action Needed ✅
 
-## 3. Added or Modified Files
+All work is committed, pushed, and deployed. No pending manual steps.
 
-* **Configuration**:
-  * [.gitignore](file:///D:/reps/26H1_数据新闻_gpt/.gitignore) - Clean git rules.
-* **Data Pipelines**:
-  * [scripts/parse_stock_timeline.py](file:///D:/reps/26H1_数据新闻_gpt/scripts/parse_stock_timeline.py) - Script converting the stock CSV into JSON timeline data.
-  * [public/data/nvda_stock_timeline.json](file:///D:/reps/26H1_数据新闻_gpt/public/data/nvda_stock_timeline.json) - Extracted earnings and price history.
-* **Type System & Scene Registry**:
-  * [src/types/data.ts](file:///D:/reps/26H1_数据新闻_gpt/src/types/data.ts) - Extended typing for the 10 scrollytelling scenes.
-  * [src/lib/story/sceneRegistry.ts](file:///D:/reps/26H1_数据新闻_gpt/src/lib/story/sceneRegistry.ts) - Populated detailed copy and annotations for all 10 scenes.
-* **Frontend Components**:
-  * [src/app/page.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/app/page.tsx) - Main page routing and component assembly.
-  * [src/components/country/CountryAnalysis.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/components/country/CountryAnalysis.tsx) - Ranking toggles and detailed annotations.
-  * [src/components/paths/CriticalPaths.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/components/paths/CriticalPaths.tsx) - 6 curated path diagrams and caveats.
-  * [src/components/facilities/FacilitiesMap.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/components/facilities/FacilitiesMap.tsx) - AI facility map overlay.
-  * [src/components/stock/StockTimeline.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/components/stock/StockTimeline.tsx) - Log-scale D3 line chart for Nvidia stock and earnings milestones.
-  * [src/components/editorial/Methodology.tsx](file:///D:/reps/26H1_数据新闻_gpt/src/components/editorial/Methodology.tsx) - Comprehensive methodology notes.
-* **Audit & QA Documentation**:
-  * [docs/16_handoff_repo_audit.md](file:///D:/reps/26H1_数据新闻_gpt/docs/16_handoff_repo_audit.md)
-  * [docs/17_visual_qa_report.md](file:///D:/reps/26H1_数据新闻_gpt/docs/17_visual_qa_report.md)
-  * [docs/18_scrollytelling_full_report.md](file:///D:/reps/26H1_数据新闻_gpt/docs/18_scrollytelling_full_report.md)
-  * [docs/19_nvda_stock_data_audit.md](file:///D:/reps/26H1_数据新闻_gpt/docs/19_nvda_stock_data_audit.md)
-  * [docs/20_final_qa_report.md](file:///D:/reps/26H1_数据新闻_gpt/docs/20_final_qa_report.md)
-  * [docs/21_github_publish_report.md](file:///D:/reps/26H1_数据新闻_gpt/docs/21_github_publish_report.md)
-  * [docs/22_vercel_deploy_report.md](file:///D:/reps/26H1_数据新闻_gpt/docs/22_vercel_deploy_report.md)
+## C. Not Completed (with reasons)
+
+1. **Browser screenshots** — CLI environment has no browser/screenshot capability. User must manually verify visual quality.
+2. **Mobile-specific testing** — Basic responsive CSS exists but no mobile device testing performed.
+3. **User verification checklist** — Requires human eyes to confirm editorial quality matches Bloomberg/Reuters/FT standards.
 
 ---
 
-## 4. Visual & Editorial Architecture
+## Modified Files (this session)
 
-Our layout mimics the design philosophy of major international publications:
-* **Bloomberg Graphics**: Muted, dark base canvas with clean sans-serif/serif contrast. Raw, un-carded KPI numbers directly integrated into text.
-* **Reuters Graphics**: Cartographic restraint. Features an quiet world map where lines represent network arcs rather than shipping routes.
-* **FT Visual Journalism**: Simple ranking tables accompanied by clean inline bar markers. Time axes offer toggle buttons for log-scaling to avoid flattening early historical data.
-* **WSJ & NYT Graphics**: Strong, sticky dual-column layouts where text blocks trigger cartographic updates dynamically, paired with clear source attributions on each visualization.
-
-No SaaS styling, shadows, rounded card templates, or drop shadows are used, ensuring a strict, media-standard aesthetic.
+| File | Change |
+|------|--------|
+| `src/app/globals.css` | +200 lines editorial section styles |
+| `src/components/country/CountryAnalysis.tsx` | Dark → paper theme conversion |
+| `src/components/paths/CriticalPaths.tsx` | Dark → paper theme conversion |
+| `src/components/facilities/FacilitiesMap.tsx` | Dark → paper theme conversion |
+| `src/components/stock/StockTimeline.tsx` | Dark → paper theme conversion |
+| `src/components/editorial/Methodology.tsx` | Dark → paper theme conversion |
+| `src/components/editorial/MethodologyStub.tsx` | Deleted (unused) |
+| `src/styles/globals.css` | Deleted (unused duplicate) |
+| `docs/16_handoff_repo_audit.md` | Updated with full audit findings |
+| `docs/20_final_qa_report.md` | Updated with session 2 results |
+| `docs/21_github_publish_report.md` | Updated with session 2 push |
+| `docs/22_vercel_deploy_report.md` | Updated with session 2 deploy |
 
 ---
 
-## 5. Build and Test Status
+## Project URLs
 
-* **prepare-data**: PASSED (clean JSON files generated successfully).
-* **style-guard**: PASSED (confirmed zero shadow, rounded, or gradient utilities).
-* **build**: PASSED (compiled successfully with Next.js Turbopack compiler).
+- **GitHub:** https://github.com/C5-jpg/nvidia-supply-chain-data-news
+- **Vercel:** https://nvidia-supply-chain-data-news.vercel.app
 
 ---
 
-## 6. Morning Verification Checklist for User
+## Visual Design Notes
 
-Please use the checklist below to verify the deployed application:
-1. **Editorial Quality**: Does the page layout feel like a high-end publication, avoiding template dashboards?
-2. **Scroll Interaction**: Does the world map highlight nodes and display appropriate relationship arcs as you scroll down?
-3. **Cartography**: Is Antarctica correctly filtered? Do the arcs only show connections without indicating physical shipment paths?
-4. **Borders**: Are Taiwan, mainland China, and Hong Kong kept separate in summaries and lists?
-5. **Flow Direction**: Are upstream dependencies clearly separated from downstream customer demand?
-6. **Country Ranking**: Does toggling metrics in the Country Analysis section correctly re-order the rankings?
-7. **Curated Paths**: Are the 6 critical paths rendered cleanly? Is ASML listed as a tier-2 candidate rather than direct Nvidia supplier?
-8. **Power Map**: Are data centers plotted on coordinates with megawatt-based circles?
-9. **Log Chart**: Does the Stock Timeline allow log-scaling to make early IPO prices legible?
-10. **Interactive Tooltips**: Does hovering over nodes in the Stock Timeline display correct EPS and revenue metrics?
-11. **Disclaimers**: Are disclaimers and source notes present below each visualization?
-12. **GitHub URL**: Is the repository accessible at [nvidia-supply-chain-data-news](https://github.com/C5-jpg/nvidia-supply-chain-data-news)?
-13. **Vercel URL**: Does the site load correctly at [nvidia-supply-chain-data-news.vercel.app](https://nvidia-supply-chain-data-news.vercel.app)?
+The entire site now uses a unified warm paper editorial palette:
+- Background: `#f3f1ea` (warm paper)
+- Text: `#171717` (near-black ink)
+- Secondary text: `#4f4a42` (warm gray)
+- Muted: `#7b756a` (annotation gray)
+- Accent: `#2f6f73` (teal for data points)
+- Secondary accent: `#b47a2b` (warm amber)
+- Risk: `#b8423a` (muted red for warnings)
+- Land: `#d8d3c8` (map countries)
+- Typography: Georgia (headlines), Inter (body), IBM Plex Mono (labels)
+
+No box-shadow, drop-shadow, gradient backgrounds, large border-radius, or backdrop-blur anywhere.
+
+---
+
+## Test Command Results
+
+```
+npm run prepare-data  → PASSED (12 integrity checks)
+npm run style-guard   → PASSED (8 forbidden tokens, 0 violations)
+npm run build         → PASSED (3 static pages, 0 errors)
+```
+
+---
+
+## Morning Verification Checklist
+
+Please open https://nvidia-supply-chain-data-news.vercel.app and verify:
+
+1. [ ] **First impression** — Does it look like Bloomberg/Reuters/FT data journalism, not a dashboard?
+2. [ ] **Theme consistency** — Is the entire page warm paper-colored (no dark sections)?
+3. [ ] **Hero** — Strong Chinese headline, byline, source note, bare KPI numbers?
+4. [ ] **Scrollytelling** — Does the map change as you scroll through 10 scenes?
+5. [ ] **Map quality** — No Antarctica, arcs not too dense, labels readable?
+6. [ ] **Country Analysis** — Do metric toggles work? Does the ranking update?
+7. [ ] **Critical Paths** — Do 6 paths show with tab navigation? ASML labeled as tier-2?
+8. [ ] **Facilities Map** — Points visible with status colors? Tooltip on hover?
+9. [ ] **Stock Timeline** — Line chart visible? Log/linear toggle works?
+10. [ ] **Methodology** — Full source notes with all 5 sections?
+11. [ ] **TW/CN/HK** — Three separate everywhere?
+12. [ ] **Source notes** — Present on every section?
+13. [ ] **Mobile** — Basically readable on phone?
+14. [ ] **GitHub** — https://github.com/C5-jpg/nvidia-supply-chain-data-news accessible?
+15. [ ] **Vercel** — Site loads and renders correctly?
