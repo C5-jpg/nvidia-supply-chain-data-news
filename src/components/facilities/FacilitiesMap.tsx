@@ -31,11 +31,11 @@ const WIDTH = 980;
 const HEIGHT = 540;
 
 const STATUS_COLORS: Record<string, string> = {
-  announced: "#e0f2fe",           // Light sky blue
-  under_construction: "#fed7aa", // Light orange
-  operational: "#86efac",        // Light green
-  expanding: "#c084fc",          // Purple
-  default: "#d4d4d8",            // Muted gray
+  announced: "var(--accent-secondary)",
+  under_construction: "var(--text-secondary)",
+  operational: "var(--accent-primary)",
+  expanding: "var(--risk)",
+  default: "var(--text-muted)",
 };
 
 const STATUS_LABELS: Record<string, string> = {
@@ -53,14 +53,13 @@ export function FacilitiesMap() {
 
   const projection = useMemo(() => createWorldProjection(WIDTH, HEIGHT), []);
   const path = useMemo(() => geoPath(projection), [projection]);
-  
+
   const visibleCountries = useMemo(() => {
     const topology = countries110m as any;
     const countries = feature(topology, topology.objects.countries) as unknown as FeatureCollection<Geometry, { name?: string }>;
     return countries.features.filter((country) => country.properties?.name !== "Antarctica");
   }, []);
 
-  // Compute radius scale for facilities
   const radiusScale = useMemo(() => {
     const maxPower = Math.max(...facilities.map((f) => f.power_mw || 0));
     return scaleSqrt()
@@ -77,145 +76,132 @@ export function FacilitiesMap() {
   };
 
   return (
-    <section className="editorial-section border-t border-neutral-800 pt-16 mt-16" aria-label="Facilities Map Section">
-      <div className="max-w-4xl mx-auto px-4">
-        {/* Header */}
-        <div className="mb-6">
-          <span className="text-xs font-mono uppercase tracking-widest text-neutral-500">Infrastructure Layer</span>
-          <h2 className="text-2xl md:text-3xl font-serif text-neutral-200 mt-2 mb-4">
-            Global AI Training Facilities & Compute Centers
-          </h2>
-          <p className="text-neutral-400 text-sm leading-relaxed max-w-2xl">
-            AI chip supply chain ends at the data center door. This map plots 50 major operational, under-construction, 
-            or announced high-density training facilities. Points are scaled by power capacity (MW), which functions 
-            as a physical constraint and demand indicator for AI clusters.
-          </p>
-        </div>
+    <section className="analysis-section" aria-label="Facilities Map Section">
+      <div className="analysis-header">
+        <p className="section-kicker">Infrastructure Layer</p>
+        <h2>Global AI Training Facilities & Compute Centers</h2>
+        <p className="section-dek">
+          AI chip supply chain ends at the data center door. This map plots {facilities.length} major operational, under-construction,
+          or announced high-density training facilities. Points are scaled by power capacity (MW), which functions
+          as a physical constraint and demand indicator for AI clusters.
+        </p>
+      </div>
 
-        {/* Legend */}
-        <div className="flex flex-wrap gap-4 mb-6 bg-neutral-950/20 border border-neutral-900 px-4 py-3 text-xs font-mono">
-          <span className="text-neutral-500 uppercase tracking-wider">Status:</span>
-          {Object.entries(STATUS_LABELS).map(([status, label]) => (
-            <div key={status} className="flex items-center gap-1.5">
-              <span
-                className="w-2.5 h-2.5 inline-block border border-neutral-950"
-                style={{ backgroundColor: STATUS_COLORS[status] }}
-              />
-              <span className="text-neutral-400">{label}</span>
-            </div>
-          ))}
-          <div className="sm:ml-auto flex items-center gap-2 text-neutral-500">
-            <span>Size ∝ Power (MW)</span>
+      {/* Legend */}
+      <div className="facilities-legend">
+        <span style={{ textTransform: "uppercase", letterSpacing: "0.06em" }}>Status:</span>
+        {Object.entries(STATUS_LABELS).map(([status, label]) => (
+          <div key={status} className="facilities-legend-item">
+            <span
+              className="facilities-legend-dot"
+              style={{ backgroundColor: STATUS_COLORS[status] }}
+            />
+            <span>{label}</span>
           </div>
+        ))}
+        <div style={{ marginLeft: "auto" }}>
+          Size ∝ Power (MW)
         </div>
+      </div>
 
-        {/* Map Container */}
-        <div 
-          className="relative border border-neutral-900 bg-neutral-950/20 overflow-hidden"
-          onMouseMove={handleMouseMove}
-        >
-          <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block select-none">
-            {/* Base map */}
-            <g>
-              {visibleCountries.map((country, index) => (
-                <path
-                  key={index}
-                  d={path(country) || ""}
-                  className="fill-neutral-900/60 stroke-neutral-950 stroke-[0.5] hover:fill-neutral-900 transition-colors duration-150"
+      {/* Map Container */}
+      <div
+        className="facilities-map-canvas"
+        onMouseMove={handleMouseMove}
+      >
+        <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block select-none">
+          {/* Base map */}
+          <g>
+            {visibleCountries.map((country, index) => (
+              <path
+                key={index}
+                d={path(country) || ""}
+                className="map-country"
+              />
+            ))}
+          </g>
+
+          {/* Projected facility circles */}
+          <g>
+            {facilities.map((fac) => {
+              if (fac.lon === null || fac.lat === null) return null;
+              const coords = projection([fac.lon, fac.lat]);
+              if (!coords) return null;
+
+              const [x, y] = coords;
+              const r = radiusScale(fac.power_mw || fac.gpu_count ? (fac.power_mw || 0) : 5);
+              const color = STATUS_COLORS[fac.status] || STATUS_COLORS.default;
+              const isHovered = hoveredFacility?.facility_id === fac.facility_id;
+
+              return (
+                <circle
+                  key={fac.facility_id}
+                  cx={x}
+                  cy={y}
+                  r={r}
+                  fill={color}
+                  fillOpacity={isHovered ? 0.9 : 0.55}
+                  stroke="var(--text-primary)"
+                  strokeWidth={isHovered ? 1.2 : 0.6}
+                  style={{ cursor: "pointer", transition: "fill-opacity 150ms" }}
+                  onMouseEnter={() => setHoveredFacility(fac)}
+                  onMouseLeave={() => setHoveredFacility(null)}
                 />
-              ))}
-            </g>
+              );
+            })}
+          </g>
+        </svg>
 
-            {/* Projected facility circles */}
-            <g>
-              {facilities.map((fac) => {
-                if (fac.lon === null || fac.lat === null) return null;
-                const coords = projection([fac.lon, fac.lat]);
-                if (!coords) return null;
-
-                const [x, y] = coords;
-                const r = radiusScale(fac.power_mw || fac.gpu_count ? (fac.power_mw || 0) : 5);
-                const color = STATUS_COLORS[fac.status] || STATUS_COLORS.default;
-                const isHovered = hoveredFacility?.facility_id === fac.facility_id;
-
-                return (
-                  <circle
-                    key={fac.facility_id}
-                    cx={x}
-                    cy={y}
-                    r={r}
-                    fill={color}
-                    fillOpacity={isHovered ? 0.95 : 0.6}
-                    stroke="#0a0a0a"
-                    strokeWidth={isHovered ? 1.5 : 0.75}
-                    className="cursor-pointer transition-all duration-150"
-                    onMouseEnter={() => setHoveredFacility(fac)}
-                    onMouseLeave={() => setHoveredFacility(null)}
-                  />
-                );
-              })}
-            </g>
-          </svg>
-
-          {/* Simple Tooltip Overlay */}
-          {hoveredFacility && (
-            <div
-              className="absolute bg-neutral-950 border border-neutral-800 p-4 space-y-2 pointer-events-none z-50 text-xs w-64 text-neutral-300 font-sans"
-              style={{ left: `${tooltipPos.x}px`, top: `${tooltipPos.y}px` }}
-            >
-              <div className="border-b border-neutral-900 pb-1.5">
-                <p className="font-bold text-neutral-100">{hoveredFacility.name}</p>
-                <p className="text-[10px] text-neutral-500 font-mono mt-0.5">
-                  {[hoveredFacility.city, hoveredFacility.state, hoveredFacility.country_name_zh].filter(Boolean).join(", ")}
-                </p>
-              </div>
-
-              <div className="space-y-1 font-mono text-[11px]">
-                {hoveredFacility.owner && (
-                  <div className="flex justify-between">
-                    <span className="text-neutral-500">Operator:</span>
-                    <span className="text-neutral-300">{hoveredFacility.owner}</span>
-                  </div>
-                )}
-                <div className="flex justify-between">
-                  <span className="text-neutral-500">Status:</span>
-                  <span className="capitalize" style={{ color: STATUS_COLORS[hoveredFacility.status] }}>
-                    {STATUS_LABELS[hoveredFacility.status] || hoveredFacility.status.replace(/_/g, " ")}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-500">Power:</span>
-                  <span className="text-neutral-200 font-bold">
-                    {hoveredFacility.power_mw ? `${hoveredFacility.power_mw} MW` : "N/A"}
-                  </span>
-                </div>
-                {hoveredFacility.gpu_count && (
-                  <div className="flex justify-between">
-                    <span className="text-neutral-500">Estimated GPUs:</span>
-                    <span className="text-neutral-300 font-bold">
-                      {hoveredFacility.gpu_count.toLocaleString()}
-                    </span>
-                  </div>
-                )}
-                {hoveredFacility.is_estimated && (
-                  <p className="text-[10px] text-amber-500 italic mt-1 text-right">
-                    * Parameters are estimated
-                  </p>
-                )}
-              </div>
-
-              <div className="border-t border-neutral-900 pt-1.5 text-[9px] text-neutral-500 italic leading-snug">
-                {hoveredFacility.caveat}
-              </div>
+        {/* Tooltip */}
+        {hoveredFacility && (
+          <div
+            className="facility-tooltip"
+            style={{ left: `${tooltipPos.x}px`, top: `${tooltipPos.y}px` }}
+          >
+            <div style={{ borderBottom: "1px solid var(--hairline)", paddingBottom: 6, marginBottom: 6 }}>
+              <p className="facility-tooltip-name">{hoveredFacility.name}</p>
+              <p className="facility-tooltip-location">
+                {[hoveredFacility.city, hoveredFacility.state, hoveredFacility.country_name_zh].filter(Boolean).join(", ")}
+              </p>
             </div>
-          )}
-        </div>
 
-        {/* Section Notes */}
-        <div className="mt-8 border-t border-neutral-900 pt-4 text-[10px] text-neutral-500 font-mono flex flex-col md:flex-row justify-between gap-2">
-          <span>Disclaimer: This facility map represents the downstream demand infrastructure layer, not a complete or exclusive list of NVIDIA customer sites.</span>
-          <span>Source: Epoch GPU clusters / Industry estimates.</span>
-        </div>
+            <div>
+              {hoveredFacility.owner && (
+                <div className="facility-tooltip-row">
+                  <span className="label">Operator:</span>
+                  <span className="value">{hoveredFacility.owner}</span>
+                </div>
+              )}
+              <div className="facility-tooltip-row">
+                <span className="label">Status:</span>
+                <span className="value">{STATUS_LABELS[hoveredFacility.status] || hoveredFacility.status.replace(/_/g, " ")}</span>
+              </div>
+              <div className="facility-tooltip-row">
+                <span className="label">Power:</span>
+                <span className="value">
+                  {hoveredFacility.power_mw ? `${hoveredFacility.power_mw} MW` : "N/A"}
+                </span>
+              </div>
+              {hoveredFacility.gpu_count && (
+                <div className="facility-tooltip-row">
+                  <span className="label">Estimated GPUs:</span>
+                  <span className="value">{hoveredFacility.gpu_count.toLocaleString()}</span>
+                </div>
+              )}
+              {hoveredFacility.is_estimated && (
+                <p className="facility-tooltip-estimated">* Parameters are estimated</p>
+              )}
+            </div>
+
+            <p className="facility-tooltip-caveat">{hoveredFacility.caveat}</p>
+          </div>
+        )}
+      </div>
+
+      {/* Section Notes */}
+      <div className="section-source">
+        <span>Disclaimer: This facility map represents the downstream demand infrastructure layer, not a complete or exclusive list of NVIDIA customer sites.</span>
+        <span>Source: Epoch GPU clusters / Industry estimates.</span>
       </div>
     </section>
   );

@@ -52,12 +52,10 @@ export function CountryAnalysis() {
     countrySummary.find((c) => c.country === "TW") || countrySummary[0] || null
   );
 
-  // Filter out Antarctica or invalid entries if any
   const validCountries = countrySummary.filter(
     (c) => c.country !== "Antarctica" && c.country_name_en !== "Antarctica"
   );
 
-  // Sort countries by the selected metric
   const sortedCountries = [...validCountries].sort((a, b) => {
     const valA = a[selectedMetric] || 0;
     const valB = b[selectedMetric] || 0;
@@ -67,182 +65,161 @@ export function CountryAnalysis() {
   const activeCountry = hoveredCountry || selectedCountry;
 
   return (
-    <section className="editorial-section border-t border-neutral-800 pt-16 mt-16" aria-label="Country Analysis Section">
-      <div className="max-w-4xl mx-auto px-4">
-        {/* Header */}
-        <div className="mb-8">
-          <span className="text-xs font-mono uppercase tracking-widest text-neutral-500">Geographic Analysis</span>
-          <h2 className="text-2xl md:text-3xl font-serif text-neutral-200 mt-2 mb-4">
-            Geographic Vulnerability & Capacity Profiles
-          </h2>
-          <p className="text-neutral-400 text-sm leading-relaxed max-w-2xl">
-            Analyze the supply chain footprint by country or region. Select a metric to rank regions, or hover/click 
-            elements to view dominant industrial stages, sole-source dependencies, and local facility deployments.
+    <section className="analysis-section" aria-label="Country Analysis Section">
+      <div className="analysis-header">
+        <p className="section-kicker">Geographic Analysis</p>
+        <h2>Geographic Vulnerability & Capacity Profiles</h2>
+        <p className="section-dek">
+          Analyze the supply chain footprint by country or region. Select a metric to rank regions, or hover/click
+          elements to view dominant industrial stages, sole-source dependencies, and local facility deployments.
+        </p>
+      </div>
+
+      {/* Metric Selector Toggles */}
+      <div className="metric-toggle-group">
+        {(Object.keys(METRIC_CONFIGS) as MetricKey[]).map((key) => (
+          <button
+            key={key}
+            onClick={() => setSelectedMetric(key)}
+            className={selectedMetric === key ? "metric-toggle metric-toggle-active" : "metric-toggle"}
+          >
+            {METRIC_CONFIGS[key].label}
+          </button>
+        ))}
+      </div>
+
+      {/* Dynamic Metric Description */}
+      <div className="metric-definition">
+        <p>Metric Definition</p>
+        <p>{METRIC_CONFIGS[selectedMetric].description}</p>
+      </div>
+
+      {/* Two-Column Detail Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        {/* Left Column: Rankings List */}
+        <div className="country-ranking">
+          <p className="country-ranking-header">
+            Regional Rankings ({METRIC_CONFIGS[selectedMetric].label})
           </p>
-        </div>
+          <div className="max-h-[380px] overflow-y-auto">
+            {sortedCountries.map((c, index) => {
+              const metricValue = c[selectedMetric] || 0;
+              const maxValue = sortedCountries[0]?.[selectedMetric] || 1;
+              const pct = (metricValue / maxValue) * 100;
+              const isSelected = selectedCountry?.country === c.country;
 
-        {/* Metric Selector Toggles */}
-        <div className="flex flex-wrap gap-2 mb-8 border-b border-neutral-800 pb-4">
-          {(Object.keys(METRIC_CONFIGS) as MetricKey[]).map((key) => (
-            <button
-              key={key}
-              onClick={() => setSelectedMetric(key)}
-              className={`px-3 py-1.5 text-xs font-mono border transition-all duration-150 ${
-                selectedMetric === key
-                  ? "bg-neutral-200 border-neutral-200 text-neutral-900 font-bold"
-                  : "bg-transparent border-neutral-800 text-neutral-400 hover:border-neutral-700 hover:text-neutral-200"
-              }`}
-            >
-              {METRIC_CONFIGS[key].label}
-            </button>
-          ))}
-        </div>
-
-        {/* Dynamic Metric Description */}
-        <div className="mb-8 bg-neutral-950/40 border border-neutral-900 px-4 py-3">
-          <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider mb-1">Metric Definition</p>
-          <p className="text-xs text-neutral-400 leading-relaxed">
-            {METRIC_CONFIGS[selectedMetric].description}
-          </p>
-        </div>
-
-        {/* Two-Column Detail Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {/* Left Column: Rankings List */}
-          <div className="space-y-4">
-            <h3 className="text-xs font-mono uppercase tracking-wider text-neutral-500 border-b border-neutral-900 pb-2">
-              Regional Rankings ({METRIC_CONFIGS[selectedMetric].label})
-            </h3>
-            <div className="max-h-[380px] overflow-y-auto pr-2 custom-scrollbar space-y-1">
-              {sortedCountries.map((c, index) => {
-                const metricValue = c[selectedMetric] || 0;
-                const maxValue = sortedCountries[0]?.[selectedMetric] || 1;
-                const pct = (metricValue / maxValue) * 100;
-                const isSelected = selectedCountry?.country === c.country;
-
-                return (
-                  <div
-                    key={c.country}
-                    onClick={() => setSelectedCountry(c)}
-                    onMouseEnter={() => setHoveredCountry(c)}
-                    onMouseLeave={() => setHoveredCountry(null)}
-                    className={`group flex items-center justify-between py-2 px-3 cursor-pointer border transition-all duration-150 ${
-                      isSelected
-                        ? "bg-neutral-900/50 border-neutral-800 text-neutral-200"
-                        : "bg-transparent border-transparent text-neutral-400 hover:bg-neutral-950 hover:text-neutral-300"
-                    }`}
-                  >
-                    <div className="flex items-center gap-3 min-w-0 mr-4 flex-1">
-                      <span className="text-[10px] font-mono text-neutral-600 w-5 text-right">{index + 1}.</span>
-                      <span className="text-sm truncate font-medium">
-                        {c.country_name_zh} ({c.country})
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-4 min-w-[120px] justify-end">
-                      {/* Muted bar chart representation */}
-                      <div className="hidden sm:block w-16 bg-neutral-950 h-1 relative overflow-hidden">
-                        <div
-                          className="bg-neutral-500 h-full absolute right-0 top-0 transition-all duration-300"
-                          style={{ width: `${pct}%` }}
-                        />
-                      </div>
-                      <span className="text-xs font-mono tabular-nums text-neutral-300 w-16 text-right">
-                        {METRIC_CONFIGS[selectedMetric].format(metricValue)}
-                      </span>
-                    </div>
+              return (
+                <div
+                  key={c.country}
+                  onClick={() => setSelectedCountry(c)}
+                  onMouseEnter={() => setHoveredCountry(c)}
+                  onMouseLeave={() => setHoveredCountry(null)}
+                  className={isSelected ? "country-row country-row-active" : "country-row"}
+                >
+                  <span className="rank-num">{index + 1}.</span>
+                  <span className="country-name">
+                    {c.country_name_zh} ({c.country})
+                  </span>
+                  <div className="country-bar-track">
+                    <div
+                      className="country-bar-fill"
+                      style={{ width: `${pct}%` }}
+                    />
                   </div>
-                );
-              })}
-            </div>
+                  <span className="country-value">
+                    {METRIC_CONFIGS[selectedMetric].format(metricValue)}
+                  </span>
+                </div>
+              );
+            })}
           </div>
+        </div>
 
-          {/* Right Column: Country Profile Editorial Annotation Panel */}
-          <div className="bg-neutral-950/60 border border-neutral-800 p-6 space-y-6">
-            {activeCountry ? (
-              <>
-                {/* Title */}
-                <div className="border-b border-neutral-800 pb-4">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-500">Region Profile</span>
-                  <h3 className="text-xl font-serif text-neutral-200 mt-1">
-                    {activeCountry.country_name_zh}
-                    <span className="text-xs font-mono text-neutral-500 ml-2 font-normal">
-                      {activeCountry.country_name_en} ({activeCountry.country})
-                    </span>
-                  </h3>
+        {/* Right Column: Country Profile */}
+        <div className="country-detail">
+          {activeCountry ? (
+            <>
+              <div style={{ borderBottom: "1px solid var(--hairline)", paddingBottom: 16, marginBottom: 4 }}>
+                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 11, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em", margin: 0 }}>
+                  Region Profile
+                </p>
+                <p className="country-detail-title">
+                  {activeCountry.country_name_zh}
+                  <span className="country-detail-code">
+                    {activeCountry.country_name_en} ({activeCountry.country})
+                  </span>
+                </p>
+              </div>
+
+              <div className="country-detail-grid">
+                <div>
+                  <p className="detail-stat-label">Suppliers</p>
+                  <p className="detail-stat-value">{activeCountry.supplier_count}</p>
                 </div>
-
-                {/* Grid stats */}
-                <div className="grid grid-cols-2 gap-4 text-xs">
-                  <div>
-                    <p className="text-neutral-500 font-mono">Suppliers</p>
-                    <p className="text-base text-neutral-300 font-semibold mt-0.5">{activeCountry.supplier_count}</p>
-                  </div>
-                  <div>
-                    <p className="text-neutral-500 font-mono">Total Links</p>
-                    <p className="text-base text-neutral-300 font-semibold mt-0.5">{activeCountry.edge_count}</p>
-                  </div>
-                  <div>
-                    <p className="text-neutral-500 font-mono">Sole-Source Nodes</p>
-                    <p className={`text-base font-semibold mt-0.5 ${
-                      activeCountry.sole_source_edges > 0 ? "text-red-400" : "text-neutral-300"
-                    }`}>
-                      {activeCountry.sole_source_edges}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-neutral-500 font-mono">AI Facilities</p>
-                    <p className="text-base text-neutral-300 font-semibold mt-0.5">{activeCountry.facility_count}</p>
-                  </div>
-                  <div className="col-span-2 border-t border-neutral-900 pt-3">
-                    <p className="text-neutral-500 font-mono">Total Power Capacity</p>
-                    <p className="text-sm text-neutral-300 font-bold mt-0.5">
-                      {activeCountry.power_mw_sum.toLocaleString()} MW
-                    </p>
-                  </div>
+                <div>
+                  <p className="detail-stat-label">Total Links</p>
+                  <p className="detail-stat-value">{activeCountry.edge_count}</p>
                 </div>
-
-                {/* Dominant Industrial Stage */}
-                <div className="border-t border-neutral-900 pt-4">
-                  <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider mb-2">Dominant Supply Stages</p>
-                  {activeCountry.stages && Object.keys(activeCountry.stages).length > 0 ? (
-                    <div className="space-y-1.5">
-                      {Object.entries(activeCountry.stages)
-                        .sort((a, b) => b[1] - a[1])
-                        .slice(0, 3)
-                        .map(([stage, count]) => (
-                          <div key={stage} className="flex justify-between items-center text-xs text-neutral-400">
-                            <span className="capitalize">{stage.replace(/_/g, " ")}</span>
-                            <span className="font-mono text-neutral-500">{count} nodes</span>
-                          </div>
-                        ))}
-                    </div>
-                  ) : (
-                    <p className="text-xs text-neutral-600 italic">No supply stages registered in dataset.</p>
-                  )}
-                </div>
-
-                {/* Caveat & Notes */}
-                <div className="bg-neutral-900/30 border border-neutral-900/80 p-3 text-[11px] text-neutral-500 italic leading-relaxed">
-                  <p>
-                    <strong>Disclaimer:</strong> Taiwan (TW), mainland China (CN), and Hong Kong (HK) are listed separately 
-                    to accurately reflect distinct customs and supply chain structures in hardware logistics.
+                <div>
+                  <p className="detail-stat-label">Sole-Source Nodes</p>
+                  <p className={activeCountry.sole_source_edges > 0 ? "detail-stat-value detail-stat-risk" : "detail-stat-value"}>
+                    {activeCountry.sole_source_edges}
                   </p>
                 </div>
-              </>
-            ) : (
-              <div className="text-center py-12 text-neutral-600 italic text-sm">
-                Select a country or region from the list to view detailed profile.
+                <div>
+                  <p className="detail-stat-label">AI Facilities</p>
+                  <p className="detail-stat-value">{activeCountry.facility_count}</p>
+                </div>
+                <div style={{ gridColumn: "span 2", borderTop: "1px solid var(--hairline)", paddingTop: 12 }}>
+                  <p className="detail-stat-label">Total Power Capacity</p>
+                  <p className="detail-stat-value" style={{ fontSize: 16 }}>
+                    {activeCountry.power_mw_sum.toLocaleString()} MW
+                  </p>
+                </div>
               </div>
-            )}
-          </div>
-        </div>
 
-        {/* Source note */}
-        <div className="mt-8 border-t border-neutral-900 pt-4 text-[10px] text-neutral-500 font-mono flex justify-between">
-          <span>Source: Scrutica supply chain records / Global training facility database.</span>
-          <span>Last updated: June 2026.</span>
+              {/* Dominant Industrial Stage */}
+              <div className="stage-list">
+                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 11, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em", margin: "0 0 8px" }}>
+                  Dominant Supply Stages
+                </p>
+                {activeCountry.stages && Object.keys(activeCountry.stages).length > 0 ? (
+                  Object.entries(activeCountry.stages)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 3)
+                    .map(([stage, count]) => (
+                      <div key={stage} className="stage-item">
+                        <span>{stage.replace(/_/g, " ")}</span>
+                        <span>{count} nodes</span>
+                      </div>
+                    ))
+                ) : (
+                  <p style={{ fontSize: 13, color: "var(--text-muted)", fontStyle: "italic" }}>
+                    No supply stages registered in dataset.
+                  </p>
+                )}
+              </div>
+
+              {/* Caveat */}
+              <div style={{ marginTop: 16, padding: "10px 12px", border: "1px solid var(--hairline)", background: "var(--surface)" }}>
+                <p style={{ fontSize: 12, color: "var(--text-muted)", fontStyle: "italic", margin: 0, lineHeight: 1.5 }}>
+                  Taiwan (TW), mainland China (CN), and Hong Kong (HK) are listed separately
+                  to accurately reflect distinct customs and supply chain structures in hardware logistics.
+                </p>
+              </div>
+            </>
+          ) : (
+            <p style={{ textAlign: "center", padding: "48px 0", color: "var(--text-muted)", fontStyle: "italic", fontSize: 14 }}>
+              Select a country or region from the list to view detailed profile.
+            </p>
+          )}
         </div>
+      </div>
+
+      {/* Source note */}
+      <div className="section-source">
+        <span>Source: Scrutica supply chain records / Global training facility database.</span>
+        <span>Last updated: June 2026.</span>
       </div>
     </section>
   );
