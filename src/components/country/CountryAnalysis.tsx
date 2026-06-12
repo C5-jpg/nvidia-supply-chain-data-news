@@ -57,6 +57,89 @@ function MetricChart({ label, value, max, format, isRisk }: {
   );
 }
 
+/* 六维指标雷达图 */
+const RADAR_METRICS: { key: MetricKey; label: string }[] = [
+  { key: "supplier_count", label: "供应商" },
+  { key: "edge_count", label: "链条" },
+  { key: "criticality_sum", label: "风险" },
+  { key: "sole_source_edges", label: "单一来源" },
+  { key: "facility_count", label: "设施" },
+  { key: "power_mw_sum", label: "电力" },
+];
+
+function CountryRadar({ country, allCountries }: { country: CountrySummary; allCountries: CountrySummary[] }) {
+  const size = 180;
+  const cx = size / 2;
+  const cy = size / 2;
+  const r = 70;
+  const n = RADAR_METRICS.length;
+
+  // Compute normalized values (0-1) relative to global max
+  const maxes = RADAR_METRICS.map(m => Math.max(...allCountries.map(c => c[m.key] || 0)));
+  const values = RADAR_METRICS.map((m, i) => {
+    const v = country[m.key] || 0;
+    return maxes[i] > 0 ? v / maxes[i] : 0;
+  });
+
+  // Compute polygon points
+  const points = values.map((v, i) => {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    const x = cx + r * v * Math.cos(angle);
+    const y = cy + r * v * Math.sin(angle);
+    return `${x},${y}`;
+  }).join(" ");
+
+  // Grid rings at 25%, 50%, 75%, 100%
+  const gridRings = [0.25, 0.5, 0.75, 1].map(level => {
+    const pts = Array.from({ length: n }, (_, i) => {
+      const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+      return `${cx + r * level * Math.cos(angle)},${cy + r * level * Math.sin(angle)}`;
+    }).join(" ");
+    return pts;
+  });
+
+  // Axis endpoints
+  const axes = RADAR_METRICS.map((_, i) => {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
+  });
+
+  return (
+    <svg viewBox={`0 0 ${size} ${size}`} style={{ width: "100%", maxWidth: 200, display: "block", margin: "0 auto" }}>
+      {/* Grid rings */}
+      {gridRings.map((pts, i) => (
+        <polygon key={i} points={pts} fill="none" stroke="var(--hairline)" strokeWidth={0.5} />
+      ))}
+      {/* Axis lines */}
+      {axes.map((a, i) => (
+        <line key={i} x1={cx} y1={cy} x2={a.x} y2={a.y} stroke="var(--hairline)" strokeWidth={0.5} />
+      ))}
+      {/* Data polygon */}
+      <polygon points={points} fill="var(--accent-primary)" fillOpacity={0.2} stroke="var(--accent-primary)" strokeWidth={1.5} />
+      {/* Data points */}
+      {values.map((v, i) => {
+        const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+        const x = cx + r * v * Math.cos(angle);
+        const y = cy + r * v * Math.sin(angle);
+        return <circle key={i} cx={x} cy={y} r={2.5} fill="var(--accent-primary)" />;
+      })}
+      {/* Labels */}
+      {RADAR_METRICS.map((m, i) => {
+        const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+        const lx = cx + (r + 16) * Math.cos(angle);
+        const ly = cy + (r + 16) * Math.sin(angle);
+        return (
+          <text key={i} x={lx} y={ly} textAnchor="middle" dominantBaseline="central"
+            fill="var(--text-muted)" fontSize={9}
+            fontFamily="IBM Plex Mono, monospace">
+            {m.label}
+          </text>
+        );
+      })}
+    </svg>
+  );
+}
+
 type MetricKey =
   | "supplier_count"
   | "edge_count"
@@ -201,6 +284,14 @@ export function CountryAnalysis() {
                     {activeCountry.country_name_en} ({activeCountry.country})
                   </span>
                 </p>
+              </div>
+
+              {/* 六维雷达图 */}
+              <div style={{ borderBottom: "1px solid var(--hairline)", paddingBottom: 16, marginBottom: 4 }}>
+                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em", margin: "0 0 8px" }}>
+                  指标全景（相对全球最大值）
+                </p>
+                <CountryRadar country={activeCountry} allCountries={validCountries} />
               </div>
 
               {/* 动态指标图表 */}

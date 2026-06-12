@@ -154,7 +154,7 @@ export function WorldMap({ activeSceneId, activeCountries, annotation }: WorldMa
                     cx={projected[0]}
                     cy={projected[1]}
                     r={isHovered ? r * 1.4 : r}
-                    stroke-width={isHovered ? 2 : 0.8}
+                    strokeWidth={isHovered ? 2 : 0.8}
                     onMouseEnter={() => setHoveredPoint(point)}
                     onMouseLeave={() => setHoveredPoint(null)}
                   />
