@@ -286,9 +286,8 @@ a {
 .map-country {
   fill: var(--land);
   stroke: var(--border);
-  stroke-width: 0.55;
-  opacity: 0.74;
-  vector-effect: non-scaling-stroke;
+  stroke-width: 0.4;
+  opacity: 0.82;
 }
 
 .map-arc {
