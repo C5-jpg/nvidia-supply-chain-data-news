@@ -293,7 +293,12 @@ a {
 .map-arc {
   opacity: 0.42;
   transition: opacity 260ms ease, stroke-width 260ms ease;
-  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.map-arc:hover {
+  opacity: 0.85;
+  stroke-width: 3 !important;
 }
 
 .map-arc-risk {
@@ -301,12 +306,17 @@ a {
   opacity: 0.54;
 }
 
+.map-arc-risk:hover {
+  opacity: 0.9;
+}
+
 .map-point circle {
   fill: var(--accent-primary);
   stroke: var(--text-primary);
   stroke-width: 0.8;
   opacity: 0.5;
-  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: opacity 200ms ease, stroke-width 200ms ease, r 200ms ease;
 }
 
 .map-point text {
@@ -320,12 +330,70 @@ a {
   opacity: 0.14;
 }
 
+.map-point-muted:hover circle {
+  opacity: 0.4;
+}
+
 .map-point-active circle {
   opacity: 0.72;
 }
 
+.map-point-active:hover circle {
+  opacity: 1;
+  stroke-width: 2;
+}
+
 .map-point-risk circle {
   fill: var(--risk);
+}
+
+/* Map tooltip */
+.map-tooltip {
+  position: absolute;
+  max-width: 280px;
+  padding: 12px 14px;
+  border: 1px solid var(--hairline);
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.5;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.map-tooltip-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.map-tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+}
+
+.map-tooltip-row .label {
+  color: var(--text-muted);
+}
+
+.map-tooltip-row .value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.map-tooltip-caveat {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--hairline);
+  font-size: 10px;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .map-annotation {

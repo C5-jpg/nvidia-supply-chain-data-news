@@ -4,6 +4,59 @@ import React, { useState } from "react";
 import { countrySummary } from "@/lib/data/loadData";
 import type { CountrySummary } from "@/types/data";
 
+const stageLabelZh: Record<string, string> = {
+  foundry: "晶圆代工",
+  hbm_memory: "高带宽内存",
+  semiconductor_equipment: "半导体设备",
+  advanced_packaging: "先进封装",
+  osat_services: "封装测试",
+  raw_materials: "原材料",
+  substrates: "基板",
+  memory: "存储",
+  system_assembly: "系统组装",
+  gpu_accelerator: "GPU 加速器",
+  networking: "网络",
+  power_delivery: "电源",
+  cooling: "散热",
+  construction: "建设",
+};
+
+function MetricChart({ label, value, max, format, isRisk }: {
+  label: string;
+  value: number;
+  max: number;
+  format: (v: number) => string;
+  isRisk?: boolean;
+}) {
+  const pct = max > 0 ? (value / max) * 100 : 0;
+  return (
+    <div style={{ marginBottom: 12 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 4 }}>
+        <p className="detail-stat-label" style={{ margin: 0 }}>{label}</p>
+        <span
+          className="detail-stat-value"
+          style={{
+            margin: 0,
+            fontSize: 20,
+            color: isRisk ? "var(--risk)" : "var(--text-primary)",
+            fontVariantNumeric: "tabular-nums",
+          }}
+        >
+          {format(value)}
+        </span>
+      </div>
+      <div style={{ height: 6, background: "var(--hairline)", position: "relative" }}>
+        <div style={{
+          height: "100%",
+          width: `${pct}%`,
+          background: isRisk ? "var(--risk)" : "var(--accent-primary)",
+          transition: "width 400ms ease",
+        }} />
+      </div>
+    </div>
+  );
+}
+
 type MetricKey =
   | "supplier_count"
   | "edge_count"
@@ -150,34 +203,47 @@ export function CountryAnalysis() {
                 </p>
               </div>
 
-              <div className="country-detail-grid">
-                <div>
-                  <p className="detail-stat-label">供应商</p>
-                  <p className="detail-stat-value">{activeCountry.supplier_count}</p>
-                </div>
-                <div>
-                  <p className="detail-stat-label">供应链条</p>
-                  <p className="detail-stat-value">{activeCountry.edge_count}</p>
-                </div>
-                <div>
-                  <p className="detail-stat-label">单一来源节点</p>
-                  <p className={activeCountry.sole_source_edges > 0 ? "detail-stat-value detail-stat-risk" : "detail-stat-value"}>
-                    {activeCountry.sole_source_edges}
-                  </p>
-                </div>
-                <div>
-                  <p className="detail-stat-label">AI 设施</p>
-                  <p className="detail-stat-value">{activeCountry.facility_count}</p>
-                </div>
-                <div style={{ gridColumn: "span 2", borderTop: "1px solid var(--hairline)", paddingTop: 12 }}>
-                  <p className="detail-stat-label">总电力容量</p>
-                  <p className="detail-stat-value" style={{ fontSize: 16 }}>
-                    {activeCountry.power_mw_sum.toLocaleString()} MW
-                  </p>
-                </div>
-              </div>
+              {/* 动态指标图表 */}
+              <MetricChart
+                label="供应商"
+                value={activeCountry.supplier_count}
+                max={Math.max(...validCountries.map(c => c.supplier_count))}
+                format={(v) => `${v}`}
+              />
+              <MetricChart
+                label="供应链条"
+                value={activeCountry.edge_count}
+                max={Math.max(...validCountries.map(c => c.edge_count))}
+                format={(v) => `${v}`}
+              />
+              <MetricChart
+                label="风险指数"
+                value={activeCountry.criticality_sum}
+                max={Math.max(...validCountries.map(c => c.criticality_sum))}
+                format={(v) => `${v.toFixed(0)}`}
+                isRisk
+              />
+              <MetricChart
+                label="单一来源"
+                value={activeCountry.sole_source_edges}
+                max={Math.max(...validCountries.map(c => c.sole_source_edges))}
+                format={(v) => `${v}`}
+                isRisk={activeCountry.sole_source_edges > 0}
+              />
+              <MetricChart
+                label="AI 设施"
+                value={activeCountry.facility_count}
+                max={Math.max(...validCountries.map(c => c.facility_count))}
+                format={(v) => `${v}`}
+              />
+              <MetricChart
+                label="设施电力 (MW)"
+                value={activeCountry.power_mw_sum}
+                max={Math.max(...validCountries.map(c => c.power_mw_sum))}
+                format={(v) => `${v.toLocaleString()} MW`}
+              />
 
-              {/* 主要产业阶段 */}
+              {/* 主要产业阶段 — 横向条形图 */}
               <div className="stage-list">
                 <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 11, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em", margin: "0 0 8px" }}>
                   主要供应阶段
@@ -185,13 +251,27 @@ export function CountryAnalysis() {
                 {activeCountry.stages && Object.keys(activeCountry.stages).length > 0 ? (
                   Object.entries(activeCountry.stages)
                     .sort((a, b) => b[1] - a[1])
-                    .slice(0, 3)
-                    .map(([stage, count]) => (
-                      <div key={stage} className="stage-item">
-                        <span>{stage.replace(/_/g, " ")}</span>
-                        <span>{count} 个节点</span>
-                      </div>
-                    ))
+                    .slice(0, 5)
+                    .map(([stage, count]) => {
+                      const maxCount = Math.max(...Object.values(activeCountry.stages));
+                      const pct = maxCount > 0 ? (count / maxCount) * 100 : 0;
+                      return (
+                        <div key={stage} style={{ marginBottom: 8 }}>
+                          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "var(--text-secondary)", marginBottom: 3 }}>
+                            <span>{stageLabelZh[stage] || stage.replace(/_/g, " ")}</span>
+                            <span style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12, color: "var(--text-muted)" }}>{count} 个节点</span>
+                          </div>
+                          <div style={{ height: 6, background: "var(--hairline)", position: "relative" }}>
+                            <div style={{
+                              height: "100%",
+                              width: `${pct}%`,
+                              background: "var(--accent-primary)",
+                              transition: "width 400ms ease",
+                            }} />
+                          </div>
+                        </div>
+                      );
+                    })
                 ) : (
                   <p style={{ fontSize: 13, color: "var(--text-muted)", fontStyle: "italic" }}>
                     数据集中无供应阶段记录。
