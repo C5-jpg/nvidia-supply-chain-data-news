@@ -109,41 +109,40 @@ export function StockTimeline() {
   }, [scales, scaleType]);
 
   return (
-    <section className="analysis-section" aria-label="Stock Timeline Section">
+    <section className="analysis-section" aria-label="股价时间线">
       <div className="analysis-header" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: 16 }}>
         <div>
-          <p className="section-kicker">Financial Context</p>
-          <h2>NVIDIA Market Capitalization & Earnings History</h2>
+          <p className="section-kicker">金融背景</p>
+          <h2>NVIDIA 市值与财报历史</h2>
           <p className="section-dek">
-            Nvidia's financial valuation provides key macro context for the hardware supply chain.
-            The chart below plots the split-adjusted price trajectory since its 1999 IPO. Hover over the nodes
-            to inspect historic earnings details, surprise ratings, and subsequent 1-day market reactions.
+            NVIDIA 的金融估值为硬件供应链提供了关键的宏观背景。
+            下图绘制了自 1999 年 IPO 以来的复权股价走势。悬停数据点可查看历史财报详情、盈利意外幅度和次日市场反应。
           </p>
         </div>
-        {/* Scale toggles */}
+        {/* 坐标轴切换 */}
         <div className="scale-toggle-group">
           <button
             onClick={() => setScaleType("log")}
             className={scaleType === "log" ? "scale-toggle scale-toggle-active" : "scale-toggle"}
           >
-            Log Scale
+            对数轴
           </button>
           <button
             onClick={() => setScaleType("linear")}
             className={scaleType === "linear" ? "scale-toggle scale-toggle-active" : "scale-toggle"}
           >
-            Linear
+            线性轴
           </button>
         </div>
       </div>
 
-      {/* Line Chart */}
+      {/* 折线图 */}
       <div
         className="stock-chart-canvas"
         onMouseMove={handleMouseMove}
       >
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block select-none">
-          {/* Y Axis Gridlines */}
+          {/* Y 轴网格线 */}
           {yTicks.map((tick) => (
             <g key={tick.label} style={{ opacity: 0.25 }}>
               <line
@@ -168,7 +167,7 @@ export function StockTimeline() {
             </g>
           ))}
 
-          {/* X Axis Gridlines */}
+          {/* X 轴网格线 */}
           {xTicks.map((tick) => (
             <g key={tick.label} style={{ opacity: 0.25 }}>
               <line
@@ -193,7 +192,7 @@ export function StockTimeline() {
             </g>
           ))}
 
-          {/* Price Line */}
+          {/* 股价折线 */}
           <path
             d={linePath}
             fill="none"
@@ -201,7 +200,7 @@ export function StockTimeline() {
             strokeWidth={1.5}
           />
 
-          {/* Price nodes */}
+          {/* 数据点 */}
           <g>
             {data.map((point) => {
               const x = scales.xScale(new Date(point.reportedDate));
@@ -226,31 +225,31 @@ export function StockTimeline() {
           </g>
         </svg>
 
-        {/* Tooltip */}
+        {/* 悬停提示 */}
         {hoveredPoint && (
           <div
             className="stock-tooltip"
             style={{ left: `${tooltipPos.x}px`, top: `${tooltipPos.y}px` }}
           >
             <div className="stock-tooltip-title">
-              <span className="fiscal">FY{hoveredPoint.fiscalYear || "N/A"} {hoveredPoint.fiscalQuarter}</span>
+              <span className="fiscal">FY{hoveredPoint.fiscalYear || "—"} {hoveredPoint.fiscalQuarter}</span>
               <span className="date">{hoveredPoint.reportedDate}</span>
             </div>
 
             <div>
               {hoveredPoint.totalRevenue !== null && (
                 <div className="stock-tooltip-row">
-                  <span className="label">Quarterly Rev:</span>
+                  <span className="label">季度营收：</span>
                   <span className="value">${(hoveredPoint.totalRevenue / 1e9).toFixed(2)}B</span>
                 </div>
               )}
               <div className="stock-tooltip-row">
-                <span className="label">Reported EPS:</span>
+                <span className="label">报告 EPS：</span>
                 <span className="value">${hoveredPoint.reportedEPS?.toFixed(3)}</span>
               </div>
               {hoveredPoint.surprisePercentage !== null && (
                 <div className="stock-tooltip-row">
-                  <span className="label">EPS Surprise:</span>
+                  <span className="label">EPS 意外：</span>
                   <span className={hoveredPoint.surprisePercentage >= 0 ? "positive" : "negative"}>
                     {hoveredPoint.surprisePercentage >= 0 ? "+" : ""}
                     {hoveredPoint.surprisePercentage.toFixed(1)}%
@@ -258,11 +257,11 @@ export function StockTimeline() {
                 </div>
               )}
               <div className="stock-tooltip-row" style={{ borderTop: "1px solid var(--hairline)", paddingTop: 4, marginTop: 4 }}>
-                <span className="label">Split-Adj Price:</span>
+                <span className="label">复权价：</span>
                 <span className="value">${hoveredPoint.close_split_adj.toFixed(4)}</span>
               </div>
               <div className="stock-tooltip-row" style={{ borderTop: "1px solid var(--hairline)", paddingTop: 4, marginTop: 4 }}>
-                <span className="label">1-day Reaction:</span>
+                <span className="label">次日反应：</span>
                 <span className={hoveredPoint.market_reaction_return_1d >= 0 ? "positive" : "negative"}>
                   {hoveredPoint.market_reaction_return_1d >= 0 ? "+" : ""}
                   {(hoveredPoint.market_reaction_return_1d * 100).toFixed(2)}%
@@ -273,10 +272,10 @@ export function StockTimeline() {
         )}
       </div>
 
-      {/* Section footnotes */}
+      {/* 数据来源 */}
       <div className="section-source">
-        <span>Disclaimer: Stock data is provided as financial context, not as causal proof of specific supplier relationships.</span>
-        <span>Source: Alpha Vantage / Yahoo Finance.</span>
+        <span>声明：股价数据仅作为金融背景参考，不代表特定供应商关系的因果证据。</span>
+        <span>数据来源：Alpha Vantage / Yahoo Finance。</span>
       </div>
     </section>
   );

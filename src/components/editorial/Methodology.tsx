@@ -3,104 +3,102 @@ export function Methodology() {
     <section className="methodology-section" aria-labelledby="methodology-title">
       <div style={{ maxWidth: 960 }}>
         <div style={{ borderBottom: "1px solid var(--hairline)", paddingBottom: 16, marginBottom: 24 }}>
-          <h2 id="methodology-title">Methodology &amp; Editorial Standards</h2>
+          <h2 id="methodology-title">方法论与编辑标准</h2>
           <p style={{ color: "var(--text-muted)", fontSize: 13, margin: "4px 0 0" }}>
-            Documentation of data sources, mapping algorithms, financial disclosures, and geopolitical boundaries.
+            数据来源、映射算法、金融披露和地缘政治边界的说明文档。
           </p>
         </div>
 
         <div className="methodology-grid">
-          {/* Left Column */}
+          {/* 左栏 */}
           <div>
             <div className="methodology-block">
-              <h3>1. Data Provenance &amp; Scope</h3>
+              <h3>1. 数据来源与范围</h3>
               <p>
-                This project integrates three primary data layers to map the physical and financial ecosystem supporting NVIDIA AI hardware:
+                本项目整合三个主要数据层，描绘支撑 NVIDIA AI 硬件的物理与金融生态系统：
               </p>
               <ul>
                 <li>
-                  <strong>Scrutica Supply Chain Data</strong>: Compiled from industry disclosures, shipment records, and regulatory filings as of June 2026. This database tracks company-to-company technology relationships.
+                  <strong>Scrutica 供应链数据</strong>：由行业公开信息、货运记录和监管文件汇编而成（截至 2026 年 6 月）。该数据库追踪企业间的技术供应关系。
                 </li>
                 <li>
-                  <strong>Global Training Facilities Database</strong>: Tracks large-scale AI clusters and hyperscale data centers, sourcing capacity from epoch-gpu-clusters and public press releases.
+                  <strong>全球训练设施数据库</strong>：追踪大规模 AI 集群和超大规模数据中心，数据来源包括 epoch-gpu-clusters 和公开新闻报道。
                 </li>
                 <li>
-                  <strong>Financial History (NVIDIA CSV)</strong>: Integrates quarterly earnings calendar data, EPS surprise metrics, and split-adjusted daily prices from Alpha Vantage and Yahoo Finance.
+                  <strong>金融历史数据（NVIDIA CSV）</strong>：整合季度财报日历、EPS 意外指标和复权日价，来源于 Alpha Vantage 和 Yahoo Finance。
                 </li>
               </ul>
             </div>
 
             <div className="methodology-block">
-              <h3>2. Relationship Directions &amp; Terminology</h3>
+              <h3>2. 关系方向与术语</h3>
               <p>
-                Relationships are defined by technology flow: <strong>Supplier → Customer</strong>.
+                关系按技术流向定义：<strong>供应商 → 客户</strong>。
               </p>
               <ul>
                 <li>
-                  <strong>Upstream</strong>: Indicated by <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>customer=NVIDIA</code>. These represent companies supplying NVIDIA with components (e.g., TSMC, SK Hynix).
+                  <strong>上游</strong>：以 <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>customer=NVIDIA</code> 标识。代表向 NVIDIA 供应组件的企业（如台积电、SK 海力士）。
                 </li>
                 <li>
-                  <strong>Downstream Demand</strong>: Indicated by <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>supplier=NVIDIA</code>. These are hyperscalers or labs purchasing hardware, not suppliers.
+                  <strong>下游需求</strong>：以 <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>supplier=NVIDIA</code> 标识。代表采购硬件的超大规模云服务商或实验室，不是供应商。
                 </li>
                 <li>
-                  <strong>Tier 2 Candidate Paths</strong>: Paths such as <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>ASML → TSMC</code> are labeled as candidate tier-2 relationships. They represent critical tools or materials supplied to Nvidia's direct manufacturers, not direct suppliers to Nvidia.
+                  <strong>二层候选路径</strong>：如 <code style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: 12 }}>ASML → TSMC</code> 等路径标注为候选二层关系。代表向 NVIDIA 直接制造商供应关键设备或材料的企业，不是 NVIDIA 的直接供应商。
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* 右栏 */}
           <div>
             <div className="methodology-block">
-              <h3>3. Metric Definitions &amp; Limitations</h3>
+              <h3>3. 指标定义与局限</h3>
               <p>
-                Metrics are indexed for risk assessment and should not be interpreted as financial transactions:
+                指标用于风险评估，不应解读为金融交易数据：
               </p>
               <ul>
                 <li>
-                  <strong>Criticality</strong>: A risk-importance score from 1 to 10 evaluating the difficulty of replacing a supplier node. This is a risk index, not a contract monetary amount or order volume.
+                  <strong>关键性（criticality）</strong>：1-10 分的风险重要性评分，评估替换一个供应商节点的难度。这是风险指数，不是合同金额或订单量。
                 </li>
                 <li>
-                  <strong>Share Percentage (share_pct)</strong>: Represents local sample shares from available disclosure documents, not complete global market share.
+                  <strong>占比（share_pct）</strong>：代表来自可用公开文件的局部样本占比，不是完整的全球市场份额。
                 </li>
                 <li>
-                  <strong>Sole Source (is_sole_source)</strong>: A boolean flag denoting that no alternative vendor is currently registered in the database for that specific component or stage.
+                  <strong>单一来源（is_sole_source）</strong>：布尔标记，表示数据库中该特定组件或阶段目前没有替代供应商注册记录。
                 </li>
               </ul>
             </div>
 
             <div className="methodology-block">
-              <h3>4. Mapping and Visualization Rules</h3>
+              <h3>4. 地图与可视化规则</h3>
               <p>
-                Geographic rendering follows strict editorial and cartographic rules:
+                地理渲染遵循严格的编辑和制图规则：
               </p>
               <ul>
                 <li>
-                  <strong>Arcs are relationships, not routes</strong>: SVG arc curves connect supplier countries to customer countries to represent tech dependencies. They do not represent physical shipping paths, air freight tracks, or logistics channels.
+                  <strong>弧线是关系，不是路线</strong>：SVG 弧线连接供应商国家和客户国家，表示技术依赖关系。不代表实际运输路径、空运航线或物流通道。
                 </li>
                 <li>
-                  <strong>Facilities map is not a customer list</strong>: Global facility markers display data center capacities (MW) to illustrate geographic demand concentration. They are not an exhaustive customer list.
+                  <strong>设施地图不是客户名单</strong>：全球设施标记展示数据中心容量（MW），说明地理需求集中度。不是完整的客户名单。
                 </li>
                 <li>
-                  <strong>Stock timeline is context, not cause</strong>: Plotting Nvidia's stock price and earnings surprise highlights general financial context. It does not imply that specific supply chain disclosures caused immediate stock movements.
+                  <strong>股价时间线是背景，不是因果</strong>：NVIDIA 股价和盈利意外的绘制仅提供一般金融背景。不意味着特定的供应链披露直接导致了股价变动。
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Footnotes */}
+        {/* 脚注 */}
         <div className="methodology-footnotes">
-          <h3>5. Border Conventions &amp; Data Integrity</h3>
+          <h3>5. 边界惯例与数据完整性</h3>
           <p>
-            To reflect the distinct regulatory, tariff, and logistical structures of the electronics trade, Taiwan (TW),
-            mainland China (CN), and Hong Kong (HK) are categorized as separate entities in all tables, summaries, and projection filters.
-            The world map projection filters out Antarctica to preserve canvas space for high-density shipping lanes.
+            为准确反映电子产品贸易中不同的监管、关税和物流结构，台湾（TW）、中国大陆（CN）和香港（HK）在所有表格、汇总和地图筛选中均作为独立实体列出。
+            世界地图投影已过滤南极洲，以保留画布空间用于高密度供应链路线。
           </p>
           <p style={{ marginTop: 12 }}>
-            Note: The repository file <code style={{ fontFamily: "IBM Plex Mono, monospace" }}>scrutica-data-dictionary.md</code> was verified as missing at the project
-            inception and remains recorded as missing. Reference materials from international news agencies (Bloomberg, Reuters, FT, WSJ)
-            were audited for visual structures, and no code, layouts, or assets were duplicated.
+            注：项目启动时确认 <code style={{ fontFamily: "IBM Plex Mono, monospace" }}>scrutica-data-dictionary.md</code> 文件缺失，已记录在案。
+            国际新闻机构（Bloomberg、Reuters、FT、WSJ）的参考资料仅用于分析视觉结构和信息架构，未复制任何代码、布局或资源。
           </p>
         </div>
       </div>

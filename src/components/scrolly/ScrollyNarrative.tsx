@@ -12,7 +12,7 @@ export function ScrollyNarrative() {
   const activeSceneId = useActiveScene(sceneIds);
 
   return (
-    <section className="scrolly-section" aria-label="Three scene scrollytelling prototype">
+    <section className="scrolly-section" aria-label="滚动叙事：10 个供应链场景">
       <div className="scrolly-copy">
         {mvpScenes.map((scene) => (
           <StoryStep

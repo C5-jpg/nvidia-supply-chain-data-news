@@ -7,16 +7,16 @@ export function HeroEditorial() {
       <div className="hero-rule" aria-hidden="true" />
       <div className="hero-grid">
         <div className="hero-copy">
-          <p className="hero-meta">Data journalism prototype · June 2026 · 6 minute read</p>
+          <p className="hero-meta">数据新闻原型 · 2026 年 6 月 · 阅读约 6 分钟</p>
           <h1>一块 Blackwell GPU 的环球旅行</h1>
           <p className="hero-dek">
             基于 Scrutica 供应链关系数据，追踪 NVIDIA AI 硬件从美国设计、台湾制造、韩国 HBM、日本/荷兰上游设备材料，到全球 AI 数据中心需求的地理链条。
           </p>
-          <p className="byline">By Codex data desk · Sources: Scrutica supply-chain and facilities provenance</p>
+          <p className="byline">数据新闻编辑部 · 数据来源：Scrutica 供应链与设施数据库</p>
         </div>
 
         <div className="hero-visual" aria-hidden="true">
-          <svg viewBox="0 0 520 260" role="img" aria-label="Abstract world relationship arcs">
+          <svg viewBox="0 0 520 260" role="img" aria-label="全球供应链关系弧线">
             <path className="hero-land" d="M58 118c35-47 94-69 164-61 48 6 83 30 128 30 38 0 74-17 112-3 23 8 38 25 42 49-29 23-73 30-121 24-45-6-77-23-123-19-58 5-101 37-153 27-27-5-45-21-49-47Z" />
             <path className="hero-arc" d="M118 138 C217 54 311 54 410 127" />
             <path className="hero-arc hero-arc-secondary" d="M238 135 C282 88 344 83 410 127" />
@@ -30,21 +30,21 @@ export function HeroEditorial() {
 
       <dl className="hero-kpis">
         <div>
-          <dt>Supply-chain relationships</dt>
+          <dt>供应链关系</dt>
           <dd>3,181</dd>
         </div>
         <div>
-          <dt>Countries / regions in map points</dt>
+          <dt>涉及国家/地区</dt>
           <dd>{countrySummary.length}</dd>
         </div>
         <div>
-          <dt>Edited map arcs for narrative</dt>
+          <dt>编辑地图弧线</dt>
           <dd>{editorialMapArcs.length}</dd>
         </div>
       </dl>
 
       <SourceNote>
-        Criticality is a risk score, not an order value. Arcs show relationships, not physical shipping routes.
+        关键性（criticality）是风险评估分数，不是订单金额。弧线表示供应链关系，不代表实际运输路线。
       </SourceNote>
     </header>
   );

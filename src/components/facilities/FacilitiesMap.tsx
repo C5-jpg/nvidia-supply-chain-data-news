@@ -39,10 +39,10 @@ const STATUS_COLORS: Record<string, string> = {
 };
 
 const STATUS_LABELS: Record<string, string> = {
-  announced: "Announced",
-  under_construction: "Under Construction",
-  operational: "Operational",
-  expanding: "Expanding",
+  announced: "已公布",
+  under_construction: "在建",
+  operational: "运营中",
+  expanding: "扩建中",
 };
 
 export function FacilitiesMap() {
@@ -76,20 +76,18 @@ export function FacilitiesMap() {
   };
 
   return (
-    <section className="analysis-section" aria-label="Facilities Map Section">
+    <section className="analysis-section" aria-label="设施地图">
       <div className="analysis-header">
-        <p className="section-kicker">Infrastructure Layer</p>
-        <h2>Global AI Training Facilities & Compute Centers</h2>
+        <p className="section-kicker">基础设施层</p>
+        <h2>全球 AI 训练设施与算力中心</h2>
         <p className="section-dek">
-          AI chip supply chain ends at the data center door. This map plots {facilities.length} major operational, under-construction,
-          or announced high-density training facilities. Points are scaled by power capacity (MW), which functions
-          as a physical constraint and demand indicator for AI clusters.
+          AI 芯片供应链的终点在数据中心门口。本地图标注了 {facilities.length} 个主要运营中、在建或已公布的高密度训练设施。圆点按电力容量（MW）缩放，体现 AI 集群的物理约束和需求指标。
         </p>
       </div>
 
-      {/* Legend */}
+      {/* 图例 */}
       <div className="facilities-legend">
-        <span style={{ textTransform: "uppercase", letterSpacing: "0.06em" }}>Status:</span>
+        <span style={{ textTransform: "uppercase", letterSpacing: "0.06em" }}>状态：</span>
         {Object.entries(STATUS_LABELS).map(([status, label]) => (
           <div key={status} className="facilities-legend-item">
             <span
@@ -100,17 +98,17 @@ export function FacilitiesMap() {
           </div>
         ))}
         <div style={{ marginLeft: "auto" }}>
-          Size ∝ Power (MW)
+          圆点大小 ∝ 电力 (MW)
         </div>
       </div>
 
-      {/* Map Container */}
+      {/* 地图 */}
       <div
         className="facilities-map-canvas"
         onMouseMove={handleMouseMove}
       >
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block select-none">
-          {/* Base map */}
+          {/* 底图 */}
           <g>
             {visibleCountries.map((country, index) => (
               <path
@@ -121,7 +119,7 @@ export function FacilitiesMap() {
             ))}
           </g>
 
-          {/* Projected facility circles */}
+          {/* 设施圆点 */}
           <g>
             {facilities.map((fac) => {
               if (fac.lon === null || fac.lat === null) return null;
@@ -152,7 +150,7 @@ export function FacilitiesMap() {
           </g>
         </svg>
 
-        {/* Tooltip */}
+        {/* 悬停提示 */}
         {hoveredFacility && (
           <div
             className="facility-tooltip"
@@ -161,35 +159,35 @@ export function FacilitiesMap() {
             <div style={{ borderBottom: "1px solid var(--hairline)", paddingBottom: 6, marginBottom: 6 }}>
               <p className="facility-tooltip-name">{hoveredFacility.name}</p>
               <p className="facility-tooltip-location">
-                {[hoveredFacility.city, hoveredFacility.state, hoveredFacility.country_name_zh].filter(Boolean).join(", ")}
+                {[hoveredFacility.city, hoveredFacility.state, hoveredFacility.country_name_zh].filter(Boolean).join("，")}
               </p>
             </div>
 
             <div>
               {hoveredFacility.owner && (
                 <div className="facility-tooltip-row">
-                  <span className="label">Operator:</span>
+                  <span className="label">运营方：</span>
                   <span className="value">{hoveredFacility.owner}</span>
                 </div>
               )}
               <div className="facility-tooltip-row">
-                <span className="label">Status:</span>
+                <span className="label">状态：</span>
                 <span className="value">{STATUS_LABELS[hoveredFacility.status] || hoveredFacility.status.replace(/_/g, " ")}</span>
               </div>
               <div className="facility-tooltip-row">
-                <span className="label">Power:</span>
+                <span className="label">电力：</span>
                 <span className="value">
-                  {hoveredFacility.power_mw ? `${hoveredFacility.power_mw} MW` : "N/A"}
+                  {hoveredFacility.power_mw ? `${hoveredFacility.power_mw} MW` : "暂无数据"}
                 </span>
               </div>
               {hoveredFacility.gpu_count && (
                 <div className="facility-tooltip-row">
-                  <span className="label">Estimated GPUs:</span>
+                  <span className="label">GPU 数量：</span>
                   <span className="value">{hoveredFacility.gpu_count.toLocaleString()}</span>
                 </div>
               )}
               {hoveredFacility.is_estimated && (
-                <p className="facility-tooltip-estimated">* Parameters are estimated</p>
+                <p className="facility-tooltip-estimated">* 参数为估算值</p>
               )}
             </div>
 
@@ -198,10 +196,10 @@ export function FacilitiesMap() {
         )}
       </div>
 
-      {/* Section Notes */}
+      {/* 数据来源 */}
       <div className="section-source">
-        <span>Disclaimer: This facility map represents the downstream demand infrastructure layer, not a complete or exclusive list of NVIDIA customer sites.</span>
-        <span>Source: Epoch GPU clusters / Industry estimates.</span>
+        <span>声明：本设施地图展示下游需求基础设施层，不是 NVIDIA 客户的完整或独家名单。</span>
+        <span>数据来源：Epoch GPU 集群 / 行业估算。</span>
       </div>
     </section>
   );

@@ -46,18 +46,31 @@ export function WorldMap({ activeSceneId, activeCountries, annotation }: WorldMa
     return `M${from[0]},${from[1]} Q${midX},${midY - lift} ${to[0]},${to[1]}`;
   }
 
+  const sceneLabelZh: Record<string, string> = {
+    intro_global_network: "全球网络总览",
+    us_design: "美国设计",
+    taiwan_foundry: "台湾代工",
+    korea_hbm: "韩国高带宽内存",
+    hidden_upstream: "隐藏的上游",
+    advanced_packaging: "先进封装",
+    system_assembly: "系统组装",
+    downstream_demand: "下游需求",
+    facilities_power_map: "设施能耗",
+    risk_concentration: "风险集中",
+  };
+
   return (
-    <figure className="world-map-shell" aria-label="Edited world map of NVIDIA AI hardware supply-chain relationships">
+    <figure className="world-map-shell" aria-label="NVIDIA AI 硬件供应链编辑地图">
       <div className="map-title-row">
         <div>
-          <p className="map-label">Edited scene map</p>
-          <h2>{activeSceneId.replace(/_/g, " ")}</h2>
+          <p className="map-label">编辑场景地图</p>
+          <h2>{sceneLabelZh[activeSceneId] || activeSceneId.replace(/_/g, " ")}</h2>
         </div>
-        <p className="map-count tabular">{sceneArcs.length} arcs</p>
+        <p className="map-count tabular">{sceneArcs.length} 条弧线</p>
       </div>
 
       <div className="map-canvas">
-        <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label="World map with selected supply-chain relationship arcs">
+        <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label="世界地图与供应链关系弧线">
           <g>
             {visibleCountries.map((country, index) => (
               <path key={index} d={path(country) || ""} className="map-country" />
@@ -97,7 +110,7 @@ export function WorldMap({ activeSceneId, activeCountries, annotation }: WorldMa
       </div>
 
       <figcaption>
-        Source: Scrutica relationship data. Arcs show supplier-to-customer relationships, not physical shipping routes.
+        数据来源：Scrutica 供应链关系数据。弧线表示供应商→客户关系，不代表实际运输路线。
       </figcaption>
     </figure>
   );
